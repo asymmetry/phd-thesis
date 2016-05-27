@@ -32,13 +32,31 @@
 \usepackage{cmap}
 \usepackage[T1]{fontenc}
 \usepackage{indentfirst}
-\usepackage[colorlinks=true,bookmarks=true]{hyperref}
-  \usepackage{bookmark}
-  \hypersetup{breaklinks=true}
 \pagestyle{plain}
 
 %% Addtional packages
-
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{caption}
+  \usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{graphicx}
+  \usepackage{epstopdf}
+\usepackage[colorlinks=true,bookmarks=true]{hyperref}
+  \usepackage{bookmark}
+  \usepackage[capitalise]{cleveref}
+  \hypersetup{breaklinks=true}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{physics}
+\usepackage{pict2e}
+\usepackage{setspace}
+\usepackage{slashed}
+\usepackage{siunitx}
+\usepackage{supertabular}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage[usenames]{xcolor}
 
 %% This bit allows you to either specify only the files which you wish to
 %% process, or `all' to process all files which you \include.
@@ -47,6 +65,8 @@
 %\typein [\files]{Enter file names to process, (chap1,chap2 ...), or `all' to process all files:}
 %\def\all{all}
 %\ifx\files\all \typeout{Including all files.} \else \typeout{Including only \files.} \includeonly{\files} \fi
+
+\input{commands}
 
 \begin{document}
 
@@ -62,8 +82,16 @@
 
 \pagenumbering{arabic}
 \include{chap1}
+\include{chap2}
+\include{chap3}
+\include{chap4}
+\include{chap5}
+\include{chap6}
+\include{chap7}
+\include{chap8}
 \appendix
 \include{appa}
+\include{appb}
 
 \cleardoublepage
 \pdfbookmark[0]{Bibliography}{Bibliography}
