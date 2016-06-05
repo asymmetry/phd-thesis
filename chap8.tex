@@ -50,7 +50,7 @@ where $LT$ is the livetime correction of the DAQ system and $f_A$ is the accepta
 \delta A \simeq \frac{1}{2}\sqrt{\frac{S_+^2}{N_+}+\frac{S_-^2}{N_-}}.
 \end{equation}
 
-During the experiment, the data is taken in several ``runs'', each containing about 7 million events. \cref{C8S1E2} can be used to calculate the uncertainty for each run, and the final asymmetry must be combined using a statistically weighted average:
+During the experiment, the data is taken in ``runs'', each containing about 7 million events. \cref{C8S1E2} can be used to calculate the uncertainty for each run, and the final asymmetry must be combined using a statistically weighted average:
 \begin{equation} \label{C8S1E3}
 A = \frac{\sum_iA_i/\delta A_i^2}{\sum_i1/\delta A_i^2},
 \end{equation}
@@ -62,7 +62,7 @@ where $A_i$ is the asymmetry calculated for each run, and $\delta A_i$ is the st
 \section{Radiative Correction}
 \label{C8S2}
 
-The Feynman diagram shown in \Cref{C2S1F1} only considers the leading order process, which is known as the Born approximation. This is assumed for theoretical analyses of the lepton-nucleon scattering. However, the data contains all of the high order effects which need to be corrected if the data was compared with the theoretical results. This correction is referred to as the radiative correction.
+The Feynman diagram shown in \Cref{C2S1F1} only considers the leading order process, which is known as the Born approximation. This is assumed for theoretical analyses of lepton-nucleon scattering. However, the data contains all of the high order effects which need to be corrected for the data to be compared with theoretical results. This correction is referred to as the radiative correction.
 
 The radiative correction arises from several different sources. The virtual photon one-loop corrections are shown in \Cref{C8S2F1}. It includes (a) the vacuum polarization correction where the virtual photon splits into an $e^-/e^+$ pair and acts as an electric dipole, (b) the vertex correction, (c)(d) the electron self-energy which contribute to the renormalization of the electron mass and (e)(f) the Bremsstrahlung radiation.
 
@@ -72,9 +72,9 @@ The radiative correction arises from several different sources. The virtual phot
   \caption[Diagrams for next-to-leading order corrections.]{Diagrams for next-to-leading order corrections. Plot reproduced from \cite{Zielinski2014b}. \label{C8S2F1}}
 \end{figure}
 
-Diagrams (a), (b), (c) and (d) are considered to be relatively small compared to the contributions of the internal and external Bremsstrahlung. The internal Bremsstrahlung happens when the electrons interacting with the nucleon, whereas the external Bremsstrahlung happens when the electrons passes through the materials before or after the interaction. In addition to the Bremsstrahlung, energy can be lost when an electron passes through the materials. It is mainly due to the ionization effect and is dependent on the radiation thickness of the materials the electron passes through. The ionization energy loss is typically in the order of a few MeVs.
+Diagrams (a), (b), (c) and (d) are considered to be relatively small compared to the contributions of the internal and external Bremsstrahlung. The internal Bremsstrahlung happens when the electron is interacting with the target nucleon, whereas the external Bremsstrahlung happens when the electron passes through the materials before or after the interaction. In addition to the Bremsstrahlung, energy can also be lost when an electron passes through the materials, due to ionization effect. The inoization energy loss is dependent on the radiation thickness of the material the electron passes through. The ionization energy loss is typically in the order of a few MeVs for the targets in this experiment.
 
-The radiative corrections should be applied to the asymmetry and the cross-section results extracted from the data. For preliminary study, the results from data are not radiative corrected, but they are compared with some radiative corrected model predictions. The Mainz online partial-wave analysis of meson electroproduction (MAID) \cite{Drechsel2007} is used to generate the polarized cross-section differences. The radiative effects are always separated into the internal part and the external part for convenience. The POLRAD formalism \cite{Akushevich1997} is used to calculate the internal radiative effects. And the methods in Ref. \cite{Mo1969} developed by Mo and Tsai is used to describe the external radiative effects.
+The radiative corrections should be applied to the asymmetry and the cross-section results extracted from the data. For preliminary study, the asymmetry results from data were not radiatively corrected, but they are compared with some radiative corrected model predictions. The Mainz online partial-wave analysis of meson electroproduction (MAID model) \cite{Drechsel2007} is used to generate the polarized cross-section differences. The radiative effects are separated into the internal part and the external part for convenience. The POLRAD formalism \cite{Akushevich1997} is used to calculate the internal radiative effects. And the methods in Ref. \cite{Mo1969} developed by Mo and Tsai is used to describe the external radiative effects.
 
 The fits of P. Bosted to the inclusive inelastic electron scattering \cite{Bosted2008} are used to generate the unpolarized cross-sections, which also need to be corrected by the radiative effects. The radiative effects are calculated using the same formalism as the polarized cross-section differences with the fits of P. Bosted as input for both the internal and external corrections.
 
@@ -101,25 +101,25 @@ The fits of P. Bosted to the inclusive inelastic electron scattering \cite{Boste
     \includegraphics[width=\textwidth]{figs/asymmetry-data-model-22535090.pdf}
     \caption{Transverse configuration. \label{C8S2F3b}}
   \end{subfigure}
-  \caption[Asymmetries with $E=2.253$ GeV and $B=5.0$ T.]{Comparison of the radiated model predictions with measured asymmetries for the kinematic settings with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configurations). \label{C8S2F3}}
+  \caption[Asymmetries with $E=2.253$ GeV and $B=5.0$ T.]{Comparison of the radiated model predictions with measured asymmetries for the kinematic settings with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configurations). Data is not radiatively corrected. \label{C8S2F3}}
 \end{figure}
 
 \begin{figure}[p!]
   \centering
   \includegraphics[width=0.79\textwidth]{figs/asymmetry-data-model-17102590.pdf}
-  \caption[Asymmetries with $E=1.710$ GeV and $B=2.5$ T.]{Comparison of the radiated model predictions with measured asymmetries for the kinematic settings with 1.710 GeV beam energy and 2.5 T transverse target field. \label{C8S2F4}}
+  \caption[Asymmetries with $E=1.710$ GeV and $B=2.5$ T.]{Comparison of the radiated model predictions with measured asymmetries for the kinematic settings with 1.710 GeV beam energy and 2.5 T transverse target field. Data is not radiatively corrected. \label{C8S2F4}}
 \end{figure}
 
 \begin{figure}[p!]
   \centering
   \includegraphics[width=0.79\textwidth]{figs/asymmetry-data-model-22532590.pdf}
-  \caption[Asymmetries with $E=2.253$ GeV and $B=2.5$ T.]{Comparison of the radiated model predictions with measured asymmetries for the kinematic settings with 2.253 GeV beam energy and 2.5 T transverse target field. \label{C8S2F5}}
+  \caption[Asymmetries with $E=2.253$ GeV and $B=2.5$ T.]{Comparison of the radiated model predictions with measured asymmetries for the kinematic settings with 2.253 GeV beam energy and 2.5 T transverse target field. Data is not radiatively corrected. \label{C8S2F5}}
 \end{figure}
 
 \begin{figure}[tb!]
   \centering
   \includegraphics[width=0.79\textwidth]{figs/asymmetry-data-model-33505090.pdf}
-  \caption[Asymmetries with $E=3.350$ GeV and $B=5.0$ T.]{Comparison of the radiated model predictions with measured asymmetries for the kinematic settings with 3.350 GeV beam energy and 5.0 T transverse target field. \label{C8S2F6}}
+  \caption[Asymmetries with $E=3.350$ GeV and $B=5.0$ T.]{Comparison of the radiated model predictions with measured asymmetries for the kinematic settings with 3.350 GeV beam energy and 5.0 T transverse target field. Data is not radiatively corrected. \label{C8S2F6}}
 \end{figure}
 
 The elastic tail must also be considered since it becomes significant in the resonance region. The MASCARD code \cite{Afanasev2001} is used to generate polarized elastic cross-sections. And the form factors from Mo and Tsai are used to calculate the radiative effects for both the polarized and unpolarized radiative effects.
@@ -132,7 +132,7 @@ The radiated and unradiated model predictions for the asymmetries is compared in
   \caption[Relations between the scattering angle and $W$.]{Relations between the scattering angle and $W$ for the kinematic settings with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configuration). \label{C8S2F7}}
 \end{figure}
 
-\Cref{C8S2F3,C8S2F4,C8S2F5,C8S2F6} shows the comparison of the radiated model predictions with the physics asymmetries extracted in the previous section. The uncertainty of the model prediction arises from several different sources. The fits of P. Bosted contribute a relative uncertainty of 5\% \cite{Bosted2008} and the Mo and Tsai formalism contributes a relative uncertainty of 4\% \cite{Mo1969}. The MAID group does not provide the fit uncertainties since the fit uncertainty is unrealistically small in this case due to the large number of data points included in the fit. Thus, we will use the difference between the model prediction and our data as the uncertainty of the model when we calculate the cross-section differences in the next section. The acceptance effects also contribute to the uncertainty when we fit the relations between $W$ and the scattering angle with data. Since the acceptance analysis is still on-going, its contribution to the uncertainty of the model prediction is not determined yet.
+\Cref{C8S2F3,C8S2F4,C8S2F5,C8S2F6} shows the comparison of the radiated model predictions with the physics asymmetries extracted in the previous section. The uncertainty of the model prediction arises from several different sources. The fits of P. Bosted contribute a relative uncertainty of 5\% \cite{Bosted2008} and the Mo and Tsai formalism contributes a relative uncertainty of 4\% \cite{Mo1969}. The MAID group does not provide the fit uncertainties since the fit uncertainty is unrealistically small in this case due to the large number of data points included in the fit. Thus, we will use the difference between the model prediction and our data as the uncertainty of the model when we calculate the cross-section differences in the next section. The acceptance effects also contribute to the uncertainty when we fit the relationship between $W$ and the scattering angle with data. Since the acceptance analysis is still on-going, its contribution to the uncertainty of the model prediction is not determined yet.
 
 \section{Polarized Cross-Section Differences}
 \label{C8S3}
@@ -147,43 +147,40 @@ The radiated and unradiated model predictions for the asymmetries is compared in
     \includegraphics[width=\textwidth]{figs/xsdiff-model-22535090.pdf}
     \caption{Transverse configuration. \label{C8S3F1b}}
   \end{subfigure}
-  \caption[Cross-section differences with $E=2.253$ GeV and $B=5.0$ T.]{Comparison of the radiative corrected and uncorrected cross-section differences for the kinematic settings with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configurations). \label{C8S3F1}}
+  \caption[Cross-section differences with $E=2.253$ GeV and $B=5.0$ T.]{Comparison of the radiative corrected and uncorrected cross-section differences for the kinematic settings with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configurations). The error bars for the uncorrected data is not shown in this plot. \label{C8S3F1}}
 \end{figure}
 
 \begin{figure}[p!]
   \centering
   \includegraphics[width=0.79\textwidth]{figs/xsdiff-model-17102590.pdf}
-  \caption[Cross-section differences with $E=1.710$ GeV and $B=2.5$ T.]{Comparison of the radiative corrected and uncorrected cross-section differences for the kinematic settings with 1.710 GeV beam energy and 2.5 T transverse target field. \label{C8S3F2}}
+  \caption[Cross-section differences with $E=1.710$ GeV and $B=2.5$ T.]{Comparison of the radiative corrected and uncorrected cross-section differences for the kinematic settings with 1.710 GeV beam energy and 2.5 T transverse target field. The error bars for the uncorrected data is not shown in this plot. \label{C8S3F2}}
 \end{figure}
 
 \begin{figure}[p!]
   \centering
   \includegraphics[width=0.79\textwidth]{figs/xsdiff-model-22532590.pdf}
-  \caption[Cross-section differences with $E=2.253$ GeV and $B=2.5$ T.]{Comparison of the radiative corrected and uncorrected cross-section differences for the kinematic settings with 2.253 GeV beam energy and 2.5 T transverse target field. \label{C8S3F3}}
+  \caption[Cross-section differences with $E=2.253$ GeV and $B=2.5$ T.]{Comparison of the radiative corrected and uncorrected cross-section differences for the kinematic settings with 2.253 GeV beam energy and 2.5 T transverse target field. The error bars for the uncorrected data is not shown in this plot. \label{C8S3F3}}
 \end{figure}
 
 \begin{figure}[tb!]
   \centering
   \includegraphics[width=0.79\textwidth]{figs/xsdiff-model-33505090.pdf}
-  \caption[Cross-section differences with $E=3.350$ GeV and $B=5.0$ T.]{Comparison of the radiative corrected and uncorrected cross-section differences for the kinematic settings with 3.350 GeV beam energy and 5.0 T transverse target field. \label{C8S3F4}}
+  \caption[Cross-section differences with $E=3.350$ GeV and $B=5.0$ T.]{Comparison of the radiative corrected and uncorrected cross-section differences for the kinematic settings with 3.350 GeV beam energy and 5.0 T transverse target field. The error bars for the uncorrected data is not shown in this plot. \label{C8S3F4}}
 \end{figure}
 
-The polarized cross-section differences can be calculated via \Cref{C7S1E9}. The asymmetries $A_{\parallel,\perp}$ has been discussed in previous sections. Since the acceptance analysis is still on-going, the unpolarized cross-sections extracted from our data are not reliable yet. Thus, the fits of P. Bosted \cite{Bosted2008} are used as the unpolarized cross-section to extract $\Delta\sigma_{\parallel,\perp}$.
+The polarized cross-section differences can be calculated via \Cref{C7S1E9}. The asymmetries $A_{\parallel,\perp}$ have been discussed in previous sections. Since the acceptance analysis is still on-going, the unpolarized cross-sections extracted from our data are not reliable yet. Thus, the fits of P. Bosted \cite{Bosted2008} are used for the unpolarized cross-section to extract $\Delta\sigma_{\parallel,\perp}$.
 
-In order to extract the polarized structure functions, the cross-section differences need to be radiative corrected. The standard method to perform radiative correction is to deconvolve the spectrum extracted from the data with the help of simulation. In this thesis, we will perform the radiative correction to the asymmetries in an alternative way. If we denote the radiated and unradiated model predictions of asymmetries by $A_{\mathrm{rad}}^{\mathrm{model}}$ and$A_{\mathrm{unrad}}^{\mathrm{model}}$ respectively, the differences between the radiated and unradiated models can be expressed as:
+In order to extract the polarized structure functions, the cross-section differences need to be radiative corrected. The standard method to perform radiative correction is to deconvolve the spectrum extracted from the data with the help of simulation. In this thesis, we perform the radiative correction to the asymmetries in an alternate way. If we denote the radiated and unradiated model predictions of asymmetries by $A_{\mathrm{rad}}^{\mathrm{model}}$ and $A_{\mathrm{unrad}}^{\mathrm{model}}$ respectively, the difference between the radiated and unradiated models can be expressed as:
 \begin{equation} \label{C8S3E1}
-\Delta_{\mathrm{RC}}^{\mathrm{model}} = A_{\mathrm{unrad}}^{\mathrm{model}}+A_{\mathrm{rad}}^{\mathrm{model}}.
+\Delta_{\mathrm{RC}}^{\mathrm{model}} = A_{\mathrm{unrad}}^{\mathrm{model}}-A_{\mathrm{rad}}^{\mathrm{model}}.
 \end{equation}
 $\Delta_{\mathrm{RC}}^{\mathrm{model}}$ is taken as the radiative correction, and the asymmetries and the cross-section differences can be expressed as:
-\begin{equation} \label{C8S3E2}
-A_{\mathrm{corrected}} = A_{\mathrm{uncorrected}}-\Delta_{\mathrm{RC}}^{\mathrm{model}},
-\end{equation}
-and
-\begin{equation} \label{C8S3E3}
+\begin{gather} \label{C8S3E2}
+A_{\mathrm{corrected}} = A_{\mathrm{uncorrected}}-\Delta_{\mathrm{RC}}^{\mathrm{model}}, \\ \label{C8S3E3}
 \Delta\sigma_{\parallel,\perp}^{\mathrm{corrected}} = 2A_{\parallel,\perp}^{\mathrm{corrected}} \cdot \sigma_0.
-\end{equation}
+\end{gather}
 
-The radiative-corrected cross-section differences are shown in \Cref{C8S3F1,C8S3F2,C8S3F3,C8S3F4}. The radiated and unradiated model predictions of the cross-section differences are also shown in the figures for comparison. The error bars on each data point are only the statistical uncertainty.
+The radiative-corrected cross-section differences are shown in \Cref{C8S3F1,C8S3F2,C8S3F3,C8S3F4}. The radiated and unradiated model predictions of the cross-section differences are also shown in the figures for comparison. The error bars on each data point are statistical only.
 
 The systematic uncertainty of the cross-section difference calculation has two major contributions: the systematic uncertainties of the asymmetries and the unpolarized cross-sections. Since the unpolarized cross-sections are given by the fits of P. Bosted, the systematic uncertainties contributed by $\sigma_0$ are 5\%. There are several different contributions to the systematic uncertainty of the asymmetry calculation. The dilution factors are calculated from the packing fraction with \cref{C7S4E11}. The uncertainties of the packing fractions are listed in \Cref{C7S3T1} and there is an additional 5\% uncertainty since the dilution factors are extracted from the P. Bosted's fits. The uncertainties of the beam polarization and the target polarization are $\sim$1.7\% and $\sim$1.2\% respectively, which has been described in \Cref{C5}. The largest contribution to the uncertainty comes from the models we used to perform the radiative correction. As mentioned in \Cref{C8S2}, the difference between the MAID model and our data is taken as the uncertainty in the analysis. Thus, we could combine all of these contributions to estimate the systematic uncertainty of the cross-section differences. The estimations of the systematic uncertainty are shown as the grey bands in \Cref{C8S3F1,C8S3F2,C8S3F3,C8S3F4}.
 
@@ -200,28 +197,28 @@ The systematic uncertainty of the cross-section difference calculation has two m
     \includegraphics[width=\textwidth]{figs/g1g2-model-22535090.pdf}
     \caption{Transverse configuration. \label{C8S4F1b}}
   \end{subfigure}
-  \caption[$g_1$ and $g_2$ results with $E=2.253$ GeV and $B=5.0$ T.]{$g_1$ and $g_2$ results for the kinematic settings with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configurations). The error bars on each data point are the statistical uncertainty. \label{C8S4F1}}
+  \caption[$g_1$ and $g_2$ results with $E=2.253$ GeV and $B=5.0$ T.]{$g_1$ and $g_2$ results for the kinematic settings with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configurations). The error bars on each data point are statistical. \label{C8S4F1}}
 \end{figure}
 
 \begin{figure}[p!]
   \centering
   \includegraphics[width=0.79\textwidth]{figs/g1g2-model-17102590.pdf}
-  \caption[$g_2$ results with $E=1.710$ GeV and $B=2.5$ T.]{$g_2$ results for the kinematic settings with 1.710 GeV beam energy and 2.5 T target field. The error bars on each data point are the statistical uncertainty. \label{C8S4F2}}
+  \caption[$g_2$ results with $E=1.710$ GeV and $B=2.5$ T.]{$g_2$ results for the kinematic settings with 1.710 GeV beam energy and 2.5 T target field. The error bars on each data point are statistical. \label{C8S4F2}}
 \end{figure}
 
 \begin{figure}[p!]
   \centering
   \includegraphics[width=0.79\textwidth]{figs/g1g2-model-22532590.pdf}
-  \caption[$g_2$ results with $E=2.253$ GeV and $B=2.5$ T.]{$g_2$ results for the kinematic settings with 2.253 GeV beam energy and 2.5 T target field. The error bars on each data point are the statistical uncertainty. \label{C8S4F3}}
+  \caption[$g_2$ results with $E=2.253$ GeV and $B=2.5$ T.]{$g_2$ results for the kinematic settings with 2.253 GeV beam energy and 2.5 T target field. The error bars on each data point are statistical. \label{C8S4F3}}
 \end{figure}
 
 \begin{figure}[tb!]
   \centering
   \includegraphics[width=0.79\textwidth]{figs/g1g2-model-33505090.pdf}
-  \caption[$g_2$ results with $E=3.350$ GeV and $B=5.0$ T.]{$g_2$ results for the kinematic settings with 3.350 GeV beam energy and 5.0 T target field. The error bars on each data point are the statistical uncertainty. \label{C8S4F4}}
+  \caption[$g_2$ results with $E=3.350$ GeV and $B=5.0$ T.]{$g_2$ results for the kinematic settings with 3.350 GeV beam energy and 5.0 T target field. The error bars on each data point are statistical. \label{C8S4F4}}
 \end{figure}
 
-In \Cref{C2S2}, we have derived the relations between the polarized cross-section differences and the polarized structure functions \cref{C2S2E25,C2S2E26}. Thus, the polarized structure functions $g_1$ and $g_2$ can be written in terms of the cross-section differences as:
+In \Cref{C2S2}, we have derived the relationships between the polarized cross-section differences and the polarized structure functions \cref{C2S2E25,C2S2E26}. Thus, the polarized structure functions $g_1$ and $g_2$ can be written in terms of the cross-section differences as:
 \begin{align} \label{C8S4E1}
 g_1 & = \frac{MQ^2}{4\alpha^2}\frac{y}{(1-y)(2-y)}\left[\Delta\sigma_\parallel+\tan\frac{\theta}{2}\Delta\sigma_\perp\right], \\ \label{C8S4E2}
 g_2 & = \frac{MQ^2}{4\alpha^2}\frac{y^2}{2(1-y)(2-y)}\left[-\Delta\sigma_\parallel+\frac{1+(1-y)\cos\theta}{(1-y)\sin\theta}\Delta\sigma_\perp\right],
@@ -243,7 +240,7 @@ During E08-027, only the transverse cross-section differences $\Delta\sigma_\per
     \includegraphics[width=\textwidth]{figs/gamma0-model-22535090.pdf}
     \caption{Transverse configuration. \label{C8S5F1b}}
   \end{subfigure}
-  \caption[$\gamma_0$ integrand with $E=2.253$ GeV and $B=5.0$ T.]{Value of the $\gamma_0$ integrand for the kinematic setting with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configurations). \label{C8S5F1}}
+  \caption[$\gamma_0$ integrand with $E=2.253$ GeV and $B=5.0$ T.]{Value of the $\gamma_0$ integrand for the kinematic setting with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configurations). For this setting, the average $Q^2$ is $\sim$0.1 GeV${}^2$. \label{C8S5F1}}
 \end{figure}
 
 \begin{figure}[p!]
@@ -256,7 +253,7 @@ During E08-027, only the transverse cross-section differences $\Delta\sigma_\per
     \includegraphics[width=\textwidth]{figs/dlt-model-22535090.pdf}
     \caption{Transverse configuration. \label{C8S5F2b}}
   \end{subfigure}
-  \caption[$\dlt$ integrand with $E=2.253$ GeV and $B=5.0$ T.]{Value of the $\dlt$ integrand for the kinematic setting with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configurations).. \label{C8S5F2}}
+  \caption[$\dlt$ integrand with $E=2.253$ GeV and $B=5.0$ T.]{Value of the $\dlt$ integrand for the kinematic setting with 2.253 GeV beam energy and 5.0 T target field (longitudinal and transverse configurations). For this setting, the average $Q^2$ is $\sim$0.1 GeV${}^2$. \label{C8S5F2}}
 \end{figure}
 
 % \begin{figure}[p!]
@@ -272,20 +269,22 @@ During E08-027, only the transverse cross-section differences $\Delta\sigma_\per
 %   \caption[Contribution to the generalized spin polarizabilities from the resonance region.]{Contribution to the generalized spin polarizabilities from the resonance region. The unit is $10^{−4}$ fm${}^4$. \label{C8S5F3}}
 % \end{figure}
 
-As mentioned in \Cref{C4S2SS1}, the generalized polarizabilities $\gamma_0$ and $\dlt$ are moments of $g_1$ and $g_2$. With a preliminary result for the spin structure functions, we can begin to calculate the contributions of $g_1$ and $g_2$ to the polarizabilities. The integrands of $\gamma_0$ and $\dlt$ have already been shown in \cref{C4S2E8,C4S2E12}. The calculation result of the integrand of $\gamma_0$ is shown in \Cref{C8S5F1} and the value of the integrand of $\dlt$ is shown versus $x$ in \Cref{C8S5F2}. Here only the two kinematic settings (longitudinal and transverse configurations) with 2.253 GeV beam energy and 5.0 T target field are shown as examples.
+As mentioned in \Cref{C4S2SS1}, the generalized polarizabilities $\gamma_0$ and $\dlt$ are moments of $g_1$ and $g_2$. With a preliminary result for the spin structure functions, we can calculate the contributions of $g_1$ and $g_2$ to the polarizabilities. The integrands of $\gamma_0$ and $\dlt$ have already been shown in \cref{C4S2E8,C4S2E12}. The calculation result of the integrand of $\gamma_0$ is shown in \Cref{C8S5F1} and the value of the integrand of $\dlt$ is shown versus $x$ in \Cref{C8S5F2}. Here only the two kinematic settings (longitudinal and transverse configurations) with 2.253 GeV beam energy and 5.0 T target field are shown as examples. The average $Q^2$ for this setting is $\sim$0.1 GeV${}^2$. To evaluate $\dlt$ and $\gamma_0$ at this $Q^2$, the integrals in \cref{C4S2E8,C4S2E12} have to be carried out from $x=0$ to the pion threshold, which is $x\approx0.25$ for this setting. The unmeasured low $x$ region will be evaluated using the $\gtww$ calculated from $g_1$ model. However, we expect the contribution of this low $x$ region to be suppressed due to the $x^2$ weight in the integrals.
 
 %The contribution to the $\gamma_0$ and $\dlt$ integral from the resonance region is shown in \Cref{C8S5F3} with the statistical and systematic uncertainties given with the data points.
 
 \section{Conclusions and Future Work}
 \label{C8S6}
 
-The goal of E08-027 is to obtain the proton spin structure function $g_2$ in the $Q^2$ range of 0.02-0.2 GeV${}^2$. In this chapter, the model prediction were used as input to extract $g_2$ since the acceptance study of E08-027 is not finalized. Once the acceptance study is finished, our data will be used to extract the unpolarized cross-sections for each kinematic setting in place of the P. Bosted's fits used here. In addition, the method for radiative correction in \Cref{C8S3} relies on the radiated cross-section models and thus is not accurate. This method will be updated with the standard deconvolution method.
+Experiment E08-027 successfully collected data for the first precision extraction of proton $g_2$ structure function in the $Q^2$ range of 0.02-0.2 GeV${}^2$. The preliminary analysis of this data has demonstrated that $g_2^p$ could be successfully extracted from E08-027 data with the required precision for the calculation of $\gamma_0$, $\dlt$ for a stringent test of $\chi$PT predictions.
 
-From this preliminary extraction of the polarized cross-section differences, we could conclude that the data agrees with the model predictions. The MAID model and P. Bosted's fits agrees well in the region of the $\Delta$-resonance, however, the prediction for higher $W$ may not be as accurate. From \Cref{C8S2F2}, we noticed that the radiative effects are a large correction at high $W$, especially for the longitudinal configuration. This indicates that we should use our own data to extract the unpolarized cross-section and to perform the radiative correction, rather than relying on a cross-section model.
+In this chapter, the model prediction were used as input to extract $g_2$ since the acceptance study of E08-027 is not finalized. Once the acceptance study is finished, our data will be used to extract the unpolarized cross-sections for each kinematic setting in place of the fits used here. In addition, the method for radiative correction in \Cref{C8S3} relies on the radiated cross-section models and thus is not sufficiently accurate. This method will be updated with the standard deconvolution method.
+
+From this preliminary extraction of the polarized cross-section differences, we can conclude that the data agree with the model predictions. The MAID model and P. Bosted's fits agree well in the region of the $\Delta$-resonance, however, the prediction for higher $W$ may not be as accurate. From \Cref{C8S2F2}, we notice that the radiative effects are a large correction at high $W$, especially for the longitudinal configuration. This indicates that we should use our own data to extract the unpolarized cross-section and to perform the radiative correction, rather than relying on a cross-section model.
 
 In \Cref{C8S4}, we also used the model predictions as input for $\Delta\sigma_{\parallel}$ since in most cases we only measured $\Delta\sigma_{\perp}$. The Jefferson Lab Hall B EG4 experiment measured $\Delta\sigma_{\parallel}$ in a similar kinematics range as this experiment. Thus, the model predictions of $\Delta\sigma_{\parallel}$ will be replaced by the data from EG4 once they finalized their analysis.
 
-Once the studies mentioned above is done, the final results of the proton spin structure function $g_2$ will be extracted. These data will provide the first test of the BC sum rule at low $Q^2$, which has not been tested before. These data are also eagerly awaited to provide a benchmark test of the $\chi$PT predictions for the generalized spin polarizabilities $\gamma_0$ and $\dlt$.
+Once the studies mentioned above are done, the final results of the proton spin structure function $g_2$ will be extracted. These data will provide the first test of the BC sum rule for the proton at low $Q^2$, which has never been tested before. These data are also eagerly awaited to provide a benchmark test of the $\chi$PT predictions for the generalized spin polarizabilities $\gamma_0$ and $\dlt$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -*-latex-*-

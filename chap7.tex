@@ -8,7 +8,7 @@ For experiment E08-027, asymmetries and unpolarized cross-sections are measured 
 \section{Asymmetries and Cross Sections}
 \label{C7S1}
 
-The physics asymmetry are calculated by taking the ratio of the difference of the polarized cross-sections to their summation. The longitudinal and transverse asymmetries can be expressed as:
+The physics asymmetries are calculated by taking the ratio of the polarized cross-section difference to the polarized cross-section sum. The longitudinal and transverse asymmetries can be expressed as:
 \begin{equation} \label{C7S1E1}
 A_{\parallel}=\cfrac{\frac{\dd[2]{\sigma}^{\buildrel\leftarrow\over\Rightarrow}}{\dd{\Omega}\dd{E'}}-\frac{\dd[2]{\sigma}^{\buildrel\rightarrow\over\Rightarrow}}{\dd{\Omega}\dd{E'}}}{\frac{\dd[2]{\sigma}^{\buildrel\leftarrow\over\Rightarrow}}{\dd{\Omega}\dd{E'}}+\frac{\dd[2]{\sigma}^{\buildrel\rightarrow\over\Rightarrow}}{\dd{\Omega}\dd{E'}}},
 \end{equation}
@@ -24,17 +24,17 @@ A_{\mathrm{raw}}=\frac{\frac{N^+}{LT^+Q^+}-\frac{N^-}{LT^-Q^-}}{\frac{N^+}{LT^+Q
 \end{equation}
 where $N^\pm$ is the number of events, $LT^{\pm}$ is the livetime and $Q^\pm$ is the charge in the $\pm$ helicity state respectively.
 
-The physics asymmetries and the raw asymmetries have relations, which can be expressed as:
+The physics asymmetries and the raw asymmetries are related through the expression:
 \begin{equation} \label{C7S1E4}
 A_{\parallel,\perp}^{\mathrm{phys}}=\frac{A_{\parallel,\perp}^{\mathrm{raw}}}{fP_bP_t},
 \end{equation}
 where $f$ is the dilution factor due to the unpolarized nitrogen and helium nuclei in the target, $P_b$ is the beam polarization and $P_t$ is the target polarization.
 
-Due to the radiation effect, we need to make radiative corrections to \cref{C7S1E4} to retrieve the Born asymmetries:
+Due to the radiation effect, we need to make radiative corrections to \cref{C7S1E4} to retrieve Born asymmetries:
 \begin{equation} \label{C7S1E5}
 A_{\parallel,\perp}^{\mathrm{Born}}=A_{\parallel,\perp}^{\mathrm{phys}}+\Delta A_{\mathrm{RC}}^{\mathrm{ext}}+\Delta A_{\mathrm{RC}}^{\mathrm{int}},
 \end{equation}
-where $\Delta A_{\mathrm{RC}}^{\mathrm{ext}}$ and $\Delta A_{\mathrm{RC}}^{\mathrm{int}}$ are the external and internal radiative correction respectively.
+where $\Delta A_{\mathrm{RC}}^{\mathrm{ext}}$ and $\Delta A_{\mathrm{RC}}^{\mathrm{int}}$ are the external and internal radiative corrections respectively.
 
 The raw unpolarized cross-section can be expressed in terms of measurable quantities as:
 \begin{equation} \label{C7S1E6}
@@ -43,7 +43,7 @@ The raw unpolarized cross-section can be expressed in terms of measurable quanti
 where
 \begin{itemize}[parsep=0pt]
 \item $N$ is the number of detected electrons within the acceptance and the particle identification cuts;
-\item $ps$ is the prescale factor for DAQ system;
+\item $ps$ is the prescale factor for the DAQ system;
 \item $LT$ is the livetime defined in \Cref{C5S4SS2};
 \item $\eta_{\mathrm{det}}$ is the product of all hardware and software detector efficiencies;
 \item $Q$ is the total charge read by BCMs, $e$ is the electron charge;
@@ -73,7 +73,7 @@ The detector efficiency $\epsilon_{\mathrm{det}}$ in \cref{C7S1E6} contains seve
 \begin{equation} \label{C7S2E1}
 \eta_{\mathrm{det}} = \eta_{\mathrm{VDC}}\cdot\eta_{\mathrm{trigger}}\cdot\eta_{\mathrm{PID}},
 \end{equation}
-where $\eta_{\mathrm{VDC}}$ is the VDC efficiency which is mostly the multitrack efficiency, $\eta_{\mathrm{det}}$ is the trigger efficiency and the $\eta_{\mathrm{PID}}$ is the particle identification (PID) efficiency determined by the performance of the Cherenkov detector and the lead-glass calorimeters. The trigger efficiency has been discussed in \Cref{C5S4SS2}. In this section, we will discuss VDC efficiency and the PID efficiency.
+where $\eta_{\mathrm{VDC}}$ is the VDC efficiency, $\eta_{\mathrm{det}}$ is the trigger efficiency and the $\eta_{\mathrm{PID}}$ is the particle identification (PID) efficiency determined by the performance of the Cherenkov detector and the lead-glass calorimeters. The trigger efficiency has been discussed in \Cref{C5S4SS2}. In this section, we will discuss VDC efficiency and the PID efficiency.
 
 \subsection{VDC Efficiency}
 \label{C7S2SS1}
@@ -84,11 +84,11 @@ The efficiency of the VDCs is defined as:
 \end{equation}
 where $N_{\mathrm{good}}$ is the number of the events with at least one track reconstructed by VDC and verified with calorimeters, and $N_{\mathrm{total}}$ is the number of total accepted events.
 
-A detected particle should leave only one track in the detector, however, multi-track events can still occur when several particles pass through the wire chambers simultaneously or if there are noises. Only events with a single track are kept in the cross-section analysis for convenience, thus the result need to be corrected with the multi-track efficiency, which is defined as:
+Under normal conditions, detected particle leaves only one track in the HRS detectors. However, multi-track events can occur when several particles pass through the wire chambers simultaneously or due to noise. Only events with a single track are kept in the cross-section analysis for convenience, thus the result need to be corrected for the efficiency due to the presence of multi-track events, which is defined as:
 \begin{equation} \label{C7S2E3}
 \eta_{\mathrm{multitrack}} = \frac{N_{\mathrm{onetrack}}}{N_{\mathrm{total}}},
 \end{equation}
-where $N_{\mathrm{onetrack}}$ is the number of the events with only one track reconstructed by VDC. The fraction of multitrack events is always small when the event rate is low. However, the proportion of the multitrack events can reach 30\% in some kinematic settings of experiment E08-027. \Cref{C7S2F1} shows the proportion of single-track events for both arms of HRS.
+where $N_{\mathrm{onetrack}}$ is the number of the events with only one track reconstructed by VDC. The fraction of multi-track events was small when the event rate is low. However, the fraction of multi-track events reached 30\% in some kinematic settings of E08-027. \Cref{C7S2F1} shows the proportion of single-track events for both arms of HRS.
 
 \begin{figure}[b!]
   \centering
@@ -101,7 +101,7 @@ where $N_{\mathrm{onetrack}}$ is the number of the events with only one track re
   \caption[Probability of an event leaving only one track in the VDC.]{Probability of an event leaving only one track in the VDC. Plot reproduced from \cite{Liu2013}. \label{C7S2F1}}
 \end{figure}
 
-The energy deposited in the calorimeters for each track is examined carefully to determine whether there is at least one good track reconstructed by VDC or not for each multitrack events. We can expect one multitrack event to have at least one good track if energy deposited by one of the tracks in this event is larger than the central momentum of the spectrometer. After carefully examination of the multitrack events, the uncertainty of the VDC efficiency has been reduced to $<1$\% for most kinematic settings. \Cref{C7S2F2} gives the total VDC efficiency with the uncertainty for both arms of HRS. For most of the kinematic settings, the VDC efficiency is approximately 100\%. See Ref. \cite{Liu2013} for more details of the multitrack efficiency analysis.
+The energy deposited in the calorimeters for each track is examined carefully to determine whether there is at least one good track reconstructed by VDC for each multi-track event. We can expect a multi-track event to have at least one good track if the energy deposited by one of the tracks in this event is larger than the central momentum of the spectrometer. After careful examination of multi-track events, the uncertainty of the VDC efficiency has been reduced to $<1$\% for most kinematic settings. \Cref{C7S2F2} gives the total VDC efficiency with the uncertainty for both arms of HRS. For most of the kinematic settings, the VDC efficiency is approximately 100\%. See Ref. \cite{Liu2013} for more detail of the multi-track efficiency analysis.
 
 \begin{figure}[tb!]
   \centering
@@ -117,7 +117,7 @@ The energy deposited in the calorimeters for each track is examined carefully to
 \subsection{Particle Identification Efficiency}
 \label{C7S2SS2}
 
-The Cherenkov detector and electromagnetic calorimeter detectors of the HRS detector package are used to do particle identification (PID). All particles with right momentum-to-charge ratio are selected by the spectrometer, which include electrons, pions, kaons and etc. To ensure a good electron sample, cuts were applied to the data to select a pure electron sample. In the kinematics of E08-027, the major contamination arises from the pions. The majority of pions can be removed with a cut on the Cherenkov, since pions cannot directly trigger this detector as we explained in \Cref{C5S4SS2}. In the real PID analysis, the gas Cherenkov cut is always used together with two additional cuts: a cut on the first layer of the lead-glass calorimeter and a cut on the total energy deposited in the calorimeter. All three PID cuts are chosen to maximize the pion suppression while preventing the good electron events to be cut out.
+The Cherenkov detector and the electromagnetic calorimeter detectors of the HRS detector package are used to do particle identification (PID). All particles with the correct momentum-to-charge ratio are selected by the spectrometer, which include electrons, pions, kaons and etc. To ensure a good electron sample, cuts were applied to the data to select a clean electron sample. In the kinematics of E08-027, the major contamination arises from the pions. The majority of pions can be removed with a cut on the Cherenkov, since pions cannot directly trigger this detector as we explained in \Cref{C5S4SS2}. In practice, the gas Cherenkov cut is used together with two additional cuts: a cut on the first layer of the lead-glass calorimeter and a cut on the total energy deposited in the calorimeter. All three PID cuts are chosen to maximize the pion suppression while minimizing the removal of good electron events from the data sample.
 
 \begin{figure}[tb!]
   \centering
@@ -141,9 +141,9 @@ The Cherenkov detector and electromagnetic calorimeter detectors of the HRS dete
   \caption[Detector efficiencies of the electromagnetic calorimeters.]{Detector efficiencies of the electromagnetic calorimeters. Plot reproduced from \cite{Cummings2013}. \label{C7S2F4}}
 \end{figure}
 
-The detector performance of the Cherenkov detector and the calorimeters is studied firstly. The results are discussed in details in Ref. \cite{Cummings2013}, and are briefly summarized here. The detector efficiencies of the gas Cherenkov detectors are shown in \Cref{C7S2F3}. The efficiency of the gas Cherenkov detector for both arms of the HRS is found to be above 99.8\% across the entire range of kinematics. \Cref{C7S2F4} also shows the detector efficiencies of the electromagnetic calorimeters for the left and right arm of the HRS. The detection efficiency of the pion rejectors in HRS-L is above 98\%, the efficiency of the pre-shower and shower in HRS-R is above 98.8\% for all kinematic settings. These results indicate that the performance of the PID detectors is good during the experiment.
+The detector performance results for the Cherenkov detector and the calorimeters are discussed in details in Ref. \cite{Cummings2013}, and are briefly summarized here. The detector efficiencies of the gas Cherenkov detectors are shown in \Cref{C7S2F3}. The efficiency of the gas Cherenkov detector for both arms of the HRS is found to be above 99.8\% across the entire range of kinematics. \Cref{C7S2F4} also shows the detector efficiencies of the electromagnetic calorimeters for the left and right arm of the HRS. The detection efficiency of the pion rejectors in HRS-L is above 98\%, the efficiency of the pre-shower and shower in HRS-R is above 98.8\% for all kinematic settings. These results indicate that the performance of the PID detectors is very good during the experiment.
 
-The gas Cherenkov cut works as a threshold cut on both arms, which is a constant cut for every kinematic setting. The calorimeter cuts are then chosen to keep the overall electron detection efficiency above 99\%. A conservative cut is placed on the pre-shower for HRS-R, and a separate cut is placed on the total deposited energy, which are momentum dependent unlike the gas Cherenkov cuts. For HRS-L, the cut on the first layer does not need to be as conservative, since more energy is deposited in the first layer of the pion rejector which is thicker than the pre-shower in right arm. Ref. \cite{Cummings2013} also discussed the pion suppression efficiencies in details. After PID cuts are applied, the level of residual pion contamination is very low, with $\pi/e<0.0052$ for all kinematic settings on both arms of the HRS, as shown in \Cref{C7S2F5}.
+The gas Cherenkov cut works as a threshold cut on both arms, which is a constant cut for every kinematic setting. The calorimeter cuts are then chosen to keep the overall electron detection efficiency above 99\%. A conservative cut is placed on the pre-shower for HRS-R, and a separate cut is placed on the total deposited energy; these cuts are momentum dependent unlike the gas Cherenkov cuts. For HRS-L, the cut on the first layer does not need to be as conservative, since more energy is deposited in the first layer of the pion rejector which is thicker than the pre-shower in right arm. Ref. \cite{Cummings2013} also discussed the pion suppression efficiencies in detail. After PID cuts are applied, the level of residual pion contamination is very low, with $\pi/e<0.0052$ for all kinematic settings on both arms of the HRS, as shown in \Cref{C7S2F5}.
 
 \begin{figure}[tb!]
   \centering
@@ -159,7 +159,7 @@ The gas Cherenkov cut works as a threshold cut on both arms, which is a constant
 \section{Packing Fraction Analysis}
 \label{C7S3}
 
-Ideally the target cell should be full of solid ammonia. However, due to the size and shape of the ammonia beads, there are some space between the beads which is filled with liquid helium. The packing fraction is defined as the effective length of the ammonia divided by the total length of the target. During the experiment, data is collected with the production NH${}_3$ target and the dummy target which has been described in \Cref{C5S3SS2}. These data are used to extract the packing fraction.
+Ideally the target cell should be completely filled with solid ammonia. However, due to the size and shape of the ammonia beads, there is some space between the beads and this space is filled with liquid helium. The packing fraction is defined as the effective length of the ammonia divided by the total length of the target. During the experiment, data is collected with the production NH${}_3$ target and the dummy target which has been described in \Cref{C5S3SS2}. These data are used to extract the packing fraction.
 
 The normalized yield for each run is defined as:
 \begin{equation} \label{C7S3E1}
@@ -191,7 +191,7 @@ where $\rho$, $l$ and $M$ are the mass density, length and the molar mass of the
 p_f = \left(\frac{L_{\mathrm{total}}}{L_{\mathrm{cell}}}\right)\left(\frac{Y_{\mathrm{target}}}{Y_{\mathrm{dummy}}}-1\right)\left(\frac{\sigma_{\mathrm{N}}\frac{\rho_{\mathrm{N}}}{M_{\mathrm{N}}}-\sigma_{\mathrm{H}}\frac{\rho_{\mathrm{H}}}{M_{\mathrm{H}}}}{\sigma_{\mathrm{He}}\frac{\rho_{\mathrm{He}}}{M_{\mathrm{He}}}}-1\right)^{-1}.
 \end{equation}
 
-The packing fraction is calculated with elastic cross-sections and yields. The cross-sections $\sigma_{\mathrm{H}}$, $\sigma_{\mathrm{He}}$ and $\sigma_{\mathrm{N}}$ are determined using elastic form factors \cite{Venkat2011,Jager1974}. The yield ratio $Y_{\mathrm{target}}/Y_{\mathrm{dummy}}$ is obtained from elastic scattering data. The raw data are used to fit the elastic peak of hydrogen, helium and nitrogen nuclei as shown in \Cref{C7S2F6}. One major issue of the fit is the contamination from the quasi-elastic peak. Thus, both the elastic peak and the quasi-elastic peak of a nuclei in the target material need to be fit to match the total spectrum. A Landau-Gaussian convolution function is used to fit the elastic peak of a nuclei since the elastic peak has some radiative tail, whereas the quasi-elastic peak is fit with a Gaussian function.
+The packing fraction is calculated with elastic cross-sections and yields. The cross-sections $\sigma_{\mathrm{H}}$, $\sigma_{\mathrm{He}}$ and $\sigma_{\mathrm{N}}$ are determined using elastic form factors \cite{Venkat2011,Jager1974}. The yield ratio $Y_{\mathrm{target}}/Y_{\mathrm{dummy}}$ is obtained from elastic scattering data. The raw data are used to fit the elastic peaks of hydrogen, helium and nitrogen nuclei as shown in \Cref{C7S2F6}. One major issue of the fit is the contamination from the quasi-elastic peak. Thus, both the elastic peak and the quasi-elastic peak of a nucleus in the target material need to be fit to match the total spectrum. A Landau-Gaussian convolution function is used to fit the elastic peak of a nucleus since the elastic peak has some radiative tail, whereas the quasi-elastic peak is fit with a Gaussian function.
 
 \begin{figure}[tb!]
   \centering
@@ -206,9 +206,9 @@ The packing fraction is calculated with elastic cross-sections and yields. The c
   \caption[An example of the fit of the elastic and quasi-elastic peak.]{An example of the fit of the elastic and quasi-elastic peak. Plot reproduced from \cite{Cummings2015}. \label{C7S2F6}}
 \end{figure}
 
-For the dummy target, the helium elastic peak and the quasi-elastic peak are fit separately and match with the total spectrum. However, the situation is more complicated for the production target. The spectrum contains five contributions from the nitrogen elastic peak, the helium elastic peak, the nitrogen quasi-elastic peak, the helium quasi-elastic peak and the hydrogen elastic peak. The relative contributions from each material is determined with the help of the Quasi-Free-Scattering (QFS) model \cite{Lightbody1988}.
+For the dummy target, the helium elastic peak and the quasi-elastic peak are fit separately and matched with the total spectrum. However, the situation is more complicated for the production target. The spectrum contains five contributions from the nitrogen elastic peak, the helium elastic peak, the nitrogen quasi-elastic peak, the helium quasi-elastic peak and the hydrogen elastic peak. The relative contributions: each material is determined with the help of the Quasi-Free-Scattering (QFS) model \cite{Lightbody1988}.
 
-The packing fraction analysis is discussed in Ref. \cite{Cummings2015} in details and the results are summarized in \cref{C7S3T1} for each kinematic setting. Since the target material need to be replaced due to the radiation damage, we prepared a few samples of the material. The ``Material ID'' in the table is used to distinguish these samples. The average packing fraction of the target material is $\sim$0.5 with an uncertainty of $0.01\sim0.03$.
+The packing fraction analysis is discussed in Ref. \cite{Cummings2015} in detail and the results are summarized in \cref{C7S3T1} for each kinematic setting. Since the target material need to be replaced due to radiation damage, we prepared a few samples of the material. The ``Material ID'' in the table is used to distinguish these samples. The average packing fraction of the target material is $\sim$0.5 with an uncertainty of $0.01\sim0.03$.
 
 \begin{table}[tb!]
   \centering
@@ -234,7 +234,7 @@ The packing fraction analysis is discussed in Ref. \cite{Cummings2015} in detail
 \section{Dilution Analysis}
 \label{C7S4}
 
-The detected events from polarized electron scattering is diluted by the electrons scattered by the unpolarized material such as the nitrogen and helium nuclei in the target. Thus the measured asymmetry need to be corrected by a factor $f$ which is referred as the dilution factor to retrieve the physics asymmetry as shown in \cref{C7S1E3}.
+The detected events from polarized electron scattering are diluted by the electrons scattered from the unpolarized material such as the nitrogen and helium nuclei in the target. Thus, the measured asymmetry need to be corrected by a factor $f$ which is referred as the dilution factor to retrieve the physics asymmetry as shown in \cref{C7S1E3}.
 
 If the yield of the electrons scattered by unpolarized materials is denoted as $Y_{\mathrm{bg}}$, the raw asymmetry can be rewritten as:
 \begin{equation} \label{C7S4E1}
@@ -244,7 +244,7 @@ The ammonia target used in this experiment contains ammonia beads, liquid helium
 \begin{equation} \label{C7S4E2}
 Y_{\mathrm{bg}} = Y_{\mathrm{N}}+Y_{\mathrm{He}}+Y_{\mathrm{Al}}.
 \end{equation}
-Compare \cref{C7S1E4} and \cref{C7S4E1}, the dilution factor be expressed as:
+Comparing \cref{C7S1E4} and \cref{C7S4E1}, the dilution factor be expressed as:
 \begin{equation} \label{C7S4E3}
 f = 1-\frac{Y_{\mathrm{bg}}}{Y_{\mathrm{target}}},
 \end{equation}
@@ -256,7 +256,7 @@ Y_{\mathrm{bg}} = AN_A\left(\frac{\rho_{\mathrm{NH_3}}L_{\mathrm{cell}}p_f}{M_{\
 \end{equation}
 where $p_f$ is the packing fraction as mentioned in \Cref{C7S3}, $A$ is the acceptance factor and $N_A$ is the Avogadro's number.
 
-During the experiment, several different target materials are used to determine the unpolarized background contribution $Y_{\mathrm{bg}}$. These targets include a dummy cell, which can be used to estimate the aluminum contribution, and a carbon target, which can be scaled using cross-section models to approximate the nitrogen contribution. Data is also collected with the pure liquid helium in the target nose, which can be used to estimate the helium background. The yields for these runs can be written in terms of its composite materials:
+During the experiment, several different target materials were used to determine the unpolarized background contribution $Y_{\mathrm{bg}}$. These targets included a dummy cell, which can be used to estimate the aluminum contribution, and a carbon target, which can be scaled using cross-section models to approximate the nitrogen contribution. Data were also collected with the pure liquid helium in the target nose, which can be used to estimate the helium background. The yields for these runs can be written in terms of the corresponding materials:
 \begin{equation} \label{C7S4E5}
 Y_{\mathrm{empty}} = AN_A\left(\frac{\rho_{\mathrm{He}}L_{\mathrm{total}}}{M_{\mathrm{He}}}\sigma_{\mathrm{He}}\right),
 \end{equation}

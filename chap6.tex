@@ -7,7 +7,7 @@ In \Cref{C5}, we have introduced the experimental setup of E08-027. The strong t
 
 In the usual optics study procedure, the HRS is considered as an identical pair of magnetic spectrometers, each of which contains three quadrupoles and a dipole magnet in a QQDQ configuration as mentioned in the previous chapter. An optics matrix is introduced to represent the effect of the magnets configuration. The kinematic variables of the detected particles are reconstructed from the detector coordinates. The optics matrix elements have been optimized over the full momentum ranges of both spectrometers and have been tested and shown to be stable.
 
-During experiment E08-027, a pair of septum magnets were used to bend the electrons with scattering angles $\sim$\SI{5.7}{\degree} into the minimum spectrometer angle \SI{12.5}{\degree} of HRS. The optics study for HRS with septum was first performed during the experiment E97-110 \cite{Sulkosky2005}. In this experiment, the optics matrix was re-optimized with the septum magnet added into the QQDQ magnets configuration. The basic optimization procedure was almost the same as the normal optics calibration procedure of the HRS. This procedure is preserved in E08-027 thus the optics matrix is used to describe the joint effect of the septum magnet and the HRS magnets.
+During experiment E08-027, a pair of septum magnets were used to bend the electrons with scattering angles $\sim$\SI{5.77}{\degree} into the minimum spectrometer angle \SI{12.5}{\degree} of HRS. The optics study for HRS with septum was first performed during the experiment E97-110 \cite{Sulkosky2005}. In this experiment, the optics matrix was re-optimized with the septum magnet added into the QQDQ magnets configuration. The basic optimization procedure was almost the same as the normal optics calibration procedure of the HRS. This procedure is preserved in E08-027 thus the optics matrix is used to describe the joint effect of the septum magnet and the HRS magnets.
 
 A pair of Helmholtz coils was used to provide a strong transverse field in the target region to polarize the target \cite{Pierce2014}. The normal optimization procedure need to be updated to include the target field effect. The motion of the scattered electron is separated to two parts: the motion in the target field region, which can be calculated using the equation of motion of charged particles in the magnetic field, and the motion out of the target field region, which still can be described by the optics matrix. The optics study procedure and the corresponding reconstruction procedure were adjusted following this idea. In this chapter, we will summarize the procedure of the spectrometer optics study for E08-027.
 
@@ -50,7 +50,7 @@ The coordinates of the detected particles are measured by the VDCs, which we hav
 
 \subsection[Transport Coordinate System at the Focal Plane]{Transport Coordinate System (TRCS) at the Focal Plane}
 
-The TRCS at the focal plane is given by rotating the DCS clockwise around the $y$ axis by \SI{45}{\degree}. Ideally, the $\hat{z}_{\mathrm{tra}}$ coincides with the central ray of the spectrometer. Typically, it is used to transport the DCS to the focal plane coordinate system. The TRCS coordinates of an event can be calculated form the DCS coordinates by:
+The TRCS at the focal plane is given by rotating the DCS clockwise around the $y$ axis by \SI{45}{\degree}. Ideally, the $\hat{z}_{\mathrm{tra}}$ coincides with the central ray of the spectrometer. Typically, it is used to transport the DCS to the focal plane coordinate system. The TRCS coordinates of an event can be calculated from the DCS coordinates by:
 \begin{align} \label{C6S1E1}
 \optx{tra} & = \optx{det}\cos(\rho_0)(1+\optt{tra}\tan(\rho_0)), \\  \label{C6S1E2}
 \optt{tra} & = \frac{\optt{det}+\tan(\rho_0)}{1-\optt{det}\tan(\rho_0)}, \\  \label{C6S1E3}
@@ -112,25 +112,25 @@ where $C_{ijkl}^{T}$ are the optics matrix elements for $\optt{tg}$. Similar exp
 \subsection{Matrix Optimization without Target Field}
 \label{C6S2SS2}
 
-The optics optimization procedure is always performed on a set of data with wide coverage on the entire acceptance of the spectrometer, which includes $\delta$ for momentum, $\optt{tg}$ and $\optp{tg}$ for solid angle and $\opty{tg}$ for reaction position. For each detected event, the target variables can be calculated from detector variables with optics matrix. However, these variables should be obtained in some other ways which is not depended on the optics matrix but is precise enough. This requirement can be fulfilled by introducing survey results and some well-known physics process like elastic scattering into the optimization procedure.
+The optics optimization procedure is always performed on a set of data with wide coverage on the entire acceptance of the spectrometer, which includes $\delta$ for momentum, $\optt{tg}$ and $\optp{tg}$ for solid angle and $\opty{tg}$ for reaction position. The target variables $\delta$, $\optt{tg}$, $\opty{tg}$ and $\optp{tg}$ for the calibration data set has to be precisely known. This requirement can be fulfilled by using survey results combined with a sieve-slit collimator and a foil target and some well-known physics process like elastic scattering as explained in this section.
 
 \begin{figure}[b!]
   \centering
   \includegraphics[width=0.3\textwidth]{figs/sieve-slit.png}
-  \caption[Geometric configuration of the sieve slit.]{Geometric configuration of the sieve slit used during E08-027. The dimensions are in mm. The two large holes is used to determine the orientation of the sieve slit. The diameter is 1.4 mm and 2.7 mm for the normal holes and the large holes respectively. \label{C6S2F1}}
+  \caption[Geometric configuration of the sieve slit.]{Geometric configuration of the sieve slit used during E08-027. The dimensions are in mm. The two large holes are used to determine the orientation of the sieve slit. The diameter is 1.4 mm and 2.7 mm for the normal holes and the large holes respectively. \label{C6S2F1}}
 \end{figure}
 
-In practice, a series of calibration measurements are performed to collect the required data. During the optics calibration measurements, a fixed energy electron beam with a point-like profile is incident on a set of foil target. The target foils is aligned along the beam line to cover the $\opty{tg}$ acceptance. Therefore, the HCS coordinates $\optx{beam}$ and $\opty{beam}$ of the interaction point can be determined by BPM, and the $z$ coordinates $\optz{react}$ can be determined by the survey result of the target foil. On the other side, a sieve slit collimator is placed before the entrance of the spectrometer (if there is septum magnet, it is placed before the entrance of the magnet). A diagram of the sieve slit used in E08-027 is shown in \Cref{C6S2F1}. The sieve has several holes that are arranged in a grid pattern with well-defined horizontal and vertical coordinates $\optx{sieve}$ and $\opty{sieve}$ (in TCS) which covers the angular acceptance. The in-plane angle $\optp{tg}$ and the out-of-plane angle $\optt{tg}$ can be expressed as:
+In practice, a series of calibration measurements are performed to collect the required data. During the optics calibration measurements, a fixed energy electron beam with a point-like profile is incident on a set of foil target. The target foils are aligned along the beam line to cover the $\opty{tg}$ acceptance. Therefore, the HCS coordinates $\optx{beam}$ and $\opty{beam}$ of the interaction point can be determined by BPM, and the $z$ coordinate $\optz{react}$ can be determined by the survey result of the target foil. On the other side, a sieve slit collimator is placed before the entrance of the spectrometer (if there is septum magnet, it is placed before the entrance of the magnet). A figure of the sieve slit used in E08-027 is shown in \Cref{C6S2F1}. The sieve has holes that are arranged in a grid pattern with well-defined horizontal and vertical coordinates $\optx{sieve}$ and $\opty{sieve}$ (in TCS) which covering the angular acceptance. The in-plane angle $\optp{tg}$ and the out-of-plane angle $\optt{tg}$ can be expressed as:
 \begin{align} \label{C6S2E5}
 \optt{tg} & = \frac{\optx{sieve}+D_x+\opty{beam}}{L-\optz{react}\cos(\theta_0)-\optx{beam}\sin(\theta_0)}, \\ \label{C6S2E6}
 \optp{tg} & = \frac{\opty{sieve}+D_y-\optx{beam}\cos(\theta_0)+\optz{react}\sin(\theta_0)}{L-\optz{react}\cos(\theta_0)-\optx{beam}\sin(\theta_0)},
 \end{align}
-where $\theta_0$ is the spectrometer central angle, $L$ is the distance from the sieve slit to the TCS origin and the $D_x$ and $D_y$ are the vertical and horizontal deviations of the spectrometer central ray to the HCS origin respectively. $L$, $D_x$ and $D_y$ can be directly surveyed. The spectrometer central angle can be calculated from the geometries of the sieve slit and the target or by performing a pointing measurement using the energy deviation between the elastic peaks of two different nuclei \cite{Liyanage2011}. The spatial coordinates $\optx{tg}$ and $\opty{tg}$ can also be expressed as survey results:
+where $\theta_0$ is the spectrometer central angle, $L$ is the distance from the sieve slit to the TCS origin and the $D_x$ and $D_y$ are the vertical and horizontal deviations of the spectrometer central ray from the HCS origin respectively. $L$, $D_x$ and $D_y$ can be directly surveyed. The spectrometer central angle can be calculated from the geometries of the sieve slit and the target or by performing a pointing measurement using the energy deviation between the elastic peaks of two different nuclei \cite{Liyanage2011}. The spatial coordinates $\optx{tg}$ and $\opty{tg}$ can also be expressed as survey results:
 \begin{align} \label{C6S2E7}
 \optx{tg} & = \optx{sieve}-L\optt{tg}, \\ \label{C6S2E8}
 \opty{tg} & = \opty{sieve}-L\optp{tg}.
 \end{align}
-Once the TCS coordinates of the particle is determined, the scattering angle can be calculated out:
+Once the TCS coordinates of the particle is determined, the scattering angle can be calculated using:
 \begin{equation} \label{C6S2E9}
 \optt{scat} = \arccos\left(\frac{\cos(\theta_0)-\optp{tg}\sin(\theta_0)}{\sqrt{1+\theta_{\mathrm{tg}}^2+\phi_{\mathrm{tg}}^2}}\right).
 \end{equation}
@@ -138,7 +138,7 @@ To calibrate $\delta$, some well-known physics process can be used to determine 
 \begin{equation} \label{C6S2E10}
 P(M,\theta) = E' = \frac{E}{1+E/M(1-\cos(\theta))},
 \end{equation}
-where $E$ is the beam energy, $M$ is the target mass and $\theta$ is the scattering angle. Therefore, the target variable $\delta$ can be obtained from $P$ and the spectrometer central momentum $P_0$ by \cref{C6S2E1}. The momentum of the elastic scattered electrons is difficult to change, to cover the acceptance of the $\delta$, several different $P_0$ values are used during the data collection to perform a delta scan. The lost energy of the scattered electrons due to the radiation effect when the electrons pass through the target material is considered as a correction to $\delta$.
+where $E$ is the beam energy, $M$ is the target mass and $\theta$ is the scattering angle. Therefore, the target variable $\delta$ can be obtained from $P$ and the spectrometer central momentum $P_0$ by \cref{C6S2E1}. To cover the acceptance range of $\delta$, several different $P_0$ values are used during the data collection to perform a delta scan. The energy loss of the scattered electrons due to the radiative effect when the electrons pass through the target material is considered as a correction to $\delta$.
 
 As mentioned above, these target variables calculated from survey results are assumed to be the actual value of the events in the data set collected with the sieve slit. The optics matrix elements are then obtained by the minimization of the aberration functions:
 \begin{equation} \label{C6S2E11}
@@ -149,24 +149,24 @@ where $s$ is the total number of the events measured for optics calibration, $W$
 \subsection{Target Field Effect}
 \label{C6S2SS3}
 
-As mentioned in \Cref{C5S3}, the field used to polarize the NH${}_3$ target is provided by a superconducting magnet, which is actually a pair of Helmholtz coils. The field map of these coils has been directly calculated via the Biot-Savart law since the current density distribution of these coils is known. To estimate the uncertainty of this calculation, a measurement of the target field is performed during the experiment. The result indicates that the relative uncertainty of this field map is less than 1.2\% over the whole field region. The detail of the field map is discussed in \Cref{A1}. The field map is calculated under 5.0 T case and is scaled by 0.5 when used in the 2.5 T configurations.
+As mentioned in \Cref{C5S3}, the field used to polarize the NH${}_3$ target is provided by a superconducting magnet, formed by a pair of Helmholtz coils. The field map of these coils has been directly calculated using the Biot-Savart law since the current density distribution of these coils is known. To estimate the uncertainty of this calculation, a measurement of the target field is performed during the experiment. The results indicate that the relative uncertainty of this field map is less than 1.2\% over the whole field region. The details of the field map are discussed in \Cref{A1}. The field map is calculated under 5.0 T case and is scaled by 0.5 when used in the 2.5 T configurations.
 
-The most important step during the optimization procedure in \Cref{C6S2SS2} is to determine the target plane variables without the optics matrix as the reference value. If there is no target field, the calculation is only linear projection and is straight forward. The linear projection is broken by the target field since the trajectory of the scattered electrons is a curve in the field.
+The most important step during the optimization procedure in \Cref{C6S2SS2} is to determine the target plane variables without the optics matrix as the reference value. If there is no target field, the calculation of these variables only involves the linear projection from the target and is straight forward. However, the linear projection is broken by the target field since the trajectory of the scattered electrons is a curve in the field.
 
-A simulation package is developed to study the behavior of the scattered electrons in the target field. In order to do this, the equation of motion of the scattered electrons is integrated in the target field. The package uses the Runge-Kutta-Nystrom (RKN) method to do the integration. The trajectory of the electrons is approximated by chords in the integration method. For each chord, the deviation between its middle point and the real curve is also estimated by RKN method. The step size of the integration is adjusted dynamically to limit the integration uncertainty less than 0.5 mm.
+A simulation package was developed to study the behavior of the scattered electrons in the target field. In order to do this, the equation of motion of the scattered electrons is integrated in the target field. The package uses the Runge-Kutta-Nystrom (RKN) method to do the integration. The trajectory of the electrons is approximated by chords in the integration method. For each chord, the deviation between its middle point and the real curve is also estimated by RKN method. The step size of the integration is adjusted dynamically to limit the integration uncertainty less than 0.5 mm.
 
 Other than the correction to $\delta$, the radiation effects also changes the trajectory of the scattered electron when target field exists since the momentum of the electron decreases during the motion due to the energy loss. This effect is also calculated in the simulation package. More details of the radiation effects can be found in reference \cite{Liu2015}.
 
-With the help of the simulation package, the motion of the scattered electron in the target field region can be isolated. Since the field strength has dropped to less than 10 Gauss at the middle of the sieve slit, the sieve slit is taken as the edge of the target field region. Thus, the motion is separated to two parts, the first segment is from the interaction point to the sieve slit, where the trajectory can be calculated from the equation of motion, and the other segment is from the sieve slit to the focal plane, which can be described by the optics matrix.
+With the help of the simulation package, the motion of the scattered electron in the target field region can be isolated. Since the field strength has dropped to less than 10 Gauss by the middle of the sieve slit, the sieve slit is taken as the edge of the target field region. Thus, the motion is separated to two parts, the first segment is from the interaction point to the sieve slit, where the trajectory can be calculated from the equation of motion, and the other segment is from the sieve slit to the focal plane, which can be described by the optics matrix.
 
 \subsection{Matrix Optimization Revised}
 \label{C6S2SS4}
 
-The original optimization procedure is adjusted when target field exists. The reference values $W_0$ in \cref{C6S2E11} can not be directly calculated from the survey results in this case. The new reference values is determined with the help of the simulation package. The procedure to calculate new reference values involves the following steps:
+The original optimization procedure had to be modified due to the presence of the target field. The reference values $W_0$ in \cref{C6S2E11} can not be directly calculated from the survey results in this case. The new reference values are determined using the simulation package. The procedure to calculate new reference values involves the following steps:
 \begin{enumerate}[parsep=0pt]
 \item Select an elastic event, determine the coordinates of its interaction point ($\optx{react}$, $\opty{react}$, $\optz{react}$) and the coordinates of the sieve hole which it passes through ($\optx{sieve}$, $\opty{sieve}$);
-\item Randomly generate a pair of scattering angles in TCS ($\optt{test}$, $\optp{test}$) and use \cref{C6S2E9,C6S2E10} to calculate the momentum $P_{\mathrm{elastic}}$ of the elastic scattered electron with this scattering angle;
-\item \label{C6S2A1}Set ($\optx{beam}$, $\opty{beam}$, $\optz{react}$) as start point and set the $P_{\mathrm{elastic}}$ and ($\optt{test}$, $\optp{test}$) as the magnitude and direction of the momentum respectively, use the simulation package to generate a trajectory from the start point to sieve slit, assume the coordinates of the intersection point of this trajectory and the sieve slit are ($\optx{drift}$, $\opty{drift}$);
+\item Randomly generate a pair of scattering angles in TCS ($\optt{test}$, $\optp{test}$) and use \cref{C6S2E9,C6S2E10} to calculate the momentum $P_{\mathrm{elastic}}$ of the elastically scattered electron with this scattering angle;
+\item \label{C6S2A1}Set ($\optx{beam}$, $\opty{beam}$, $\optz{react}$) as start point and set $P_{\mathrm{elastic}}$ and ($\optt{test}$, $\optp{test}$) as the magnitude and direction of the momentum respectively, use the simulation package to generate a trajectory from the start point to sieve slit, assuming the coordinates of the intersection point of this trajectory and the sieve slit are ($\optx{drift}$, $\opty{drift}$);
 \item \label{C6S2A2}Compare ($\optx{drift}$, $\opty{drift}$) with ($\optx{sieve}$, $\opty{sieve}$), calculate the new test scattering angle:
 \begin{align} \label{C6S2E12}
 \optt{test}^{\,\mathrm{new}} & = \optt{test}^{\,\mathrm{old}}+\frac{(\optx{drift}-\optx{sieve})/L}{2}, \\ \label{C6S2E13}
@@ -181,14 +181,14 @@ where $L$ is the distance from the sieve slit to the TCS origin;
 \end{figure}
 
 \item Repeat step \ref{C6S2A1} and \ref{C6S2A2} until the deviation between point ($\optx{drift}$, $\opty{drift}$) and the sieve hole position ($\optx{sieve}$, $\opty{sieve}$) is less than the preset tolerance;
-\item The trajectory obtained in the final step passes the interaction point and the same sieve hole as the electron passes, the step \ref{C6S2A1} assures it simulates a elastic electron. Thus it is the ideal trajectory for this particular event. If the coordinates of this trajectory at its intersection point with the sieve slit is defined as ($\optx{drift}$, $\optt{drift}$, $\opty{drift}$, $\optp{drift}$), the new reference values for the optimization can be obtained by projecting them to the target plane linearly:
+\item The trajectory obtained in the final step passes the interaction point and the same sieve hole as the electron passes, the step \ref{C6S2A1} assures it simulates an elastic electron. Thus it is the ideal trajectory for this particular event. If the coordinates of this trajectory at its intersection point with the sieve slit is defined as ($\optx{drift}$, $\optt{drift}$, $\opty{drift}$, $\optp{drift}$), the new reference values for the optimization can be obtained by projecting them to the target plane linearly:
 \begin{align} \label{C6S2E14}
 \optx{ref} & = \optx{drift}-L\optt{drift}, & \optt{ref} & = \optt{drift}, \\ \label{C6S2E15}
 \opty{ref} & = \opty{drift}-L\optp{drift}, & \optp{ref} & = \optp{drift}.
 \end{align}
 \end{enumerate}
 
-Once the new reference values is determined, the same algorithm in \cref{C6S2SS2} can be used to do the optimization. A set of Python scripts is added into the original optimization package to calculate the reference values from the survey results with the simulation package. The optimization package is also updated to replace the linear-projected reference values with the new values from the simulation.
+Once the new reference values are determined, the same algorithm in \cref{C6S2SS2} can be used to do the optimization. A set of Python scripts is added into the original optimization package to calculate the reference values from the survey results with the simulation package. The optimization package is also updated to replace the linear-projected reference values with the new values from the simulation.
 
 \section{Experimental Technique and Results}
 \label{C6S3}
@@ -196,9 +196,9 @@ Once the new reference values is determined, the same algorithm in \cref{C6S2SS2
 \subsection{Required Data}
 \label{C6S3SS1}
 
-\Cref{C6S3T1} summarizes the beam energy and the target field configuration for all kinematic settings. Unfortunately, the septum magnet burned twice during the experiment. A few turns of coil in the septum were bypassed to fix it, which leads to three different septum configurations. They are labeled by the number of the coil turns: ``48-48-16'' for the original septum, ``40-32-16'' for the septum burned once and ``40-00-16'' for the worst case. The septum configuration for each kinematic setting is listed in the septum column of \cref{C6S3T1}.
+\Cref{C6S3T1} summarizes the beam energy and the target field configuration for all kinematic settings. Unfortunately, the septum magnet coils burned twice during the experiment. Some turns of the coils in the septum were bypassed to fix it, which led to three different septum configurations. They are labeled by the number of the coil turns: ``48-48-16'' for the original septum, ``40-32-16'' for the septum burned once and ``40-00-16'' for the worst case. The septum configuration for each kinematic setting is listed in the septum column of \cref{C6S3T1}.
 
-\begin{table}[tb!]
+\begin{table}[b!]
   \centering
   \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
   \begin{tabular}{|c|C{2.5cm}|C{2cm}|C{2cm}|c|C{2.5cm}|}
@@ -216,24 +216,28 @@ Once the new reference values is determined, the same algorithm in \cref{C6S2SS2
   \caption[Beam energy and target field configurations.]{Beam energy and target field configurations for E08-027. The septum configuration and the location of the carbon foil optics target are also listed in this table. \label{C6S3T1}}
 \end{table}
 
-The polarized NH${}_3$ target need to be cooled down to 1K in a liquid He (LHe) bath. The LHe container is a cylinder and the diameter is only 42.0 mm. Thus, the length of the target along $z$ axis in HCS is only 28.3 mm. As mentioned in \cref{C6S2SS2}, a set of foil target is used to cover the $\opty{tg}$ acceptance typically. But at \SI{5.7}{\degree}, the typical position resolution 4.0 mm \cite{Alcorn2004} is reduced by a factor of 10, which means that the multiple foils installed in the 28.3 mm target cell can not be distinguished by the spectrometer. Thus, only one carbon foil is used to collect optics data and we can only optimize for $\delta$, $\theta$ and $\phi$. The BPM readout is used to determine $y_{tg}$ instead. The thickness of the carbon foil is 40 mil (1.016 mm) for setting 1$\sim$5 in \cref{C6S3T1} and 125 mil (3.175 mm) for the other settings. The foil locations ($\optz{react}$ in \cref{C6S2E5,C6S2E6}) are given in the foil column in \cref{C6S3T1}. To reduce the radiation effect, the LHe in the LHe container is vapored and pumped out when collecting the optics data.
+The polarized NH${}_3$ target need to be cooled down to 1K in a liquid He (LHe) bath. The LHe container is a cylinder and the diameter is only 42.0 mm. Thus, the length of the target along $z$ axis in HCS is only 28.3 mm. As mentioned in \cref{C6S2SS2}, a set of foil targets is generally used to cover the $\opty{tg}$ acceptance typically. But at \SI{5.77}{\degree}, the typical position resolution of $\sim$ 1 mm \cite{Alcorn2004} is magnified by a factor of 10 in the position along the beam line, which means that the multiple foils installed in the 28.3 mm target cell can not be easily distinguished by the spectrometer. Thus, only one carbon foil is used to collect optics data and we can only optimize for $\delta$, $\theta$ and $\phi$. The BPM readout is used to determine $y_{tg}$ instead. The thickness of the carbon foil was 40 mil (1.016 mm) for settings 1-5 in \cref{C6S3T1} and 125 mil (3.175 mm) for the other settings. The foil locations along the beam direction ($\optz{react}$ in \cref{C6S2E5,C6S2E6}) are given in the foil column in \cref{C6S3T1}. To reduce the radiation effect, the LHe in the LHe container was vapored and pumped out when collecting the optics data.
 
-The diagram of the sieve slit used to take collimator data is shown in \Cref{C6S2F1}. There are 49 holes in a 7$\times$7 grid pattern with two holes larger than the others. The large holes are used to determine the orientation of the image of the sieve slit. The horizontal distance between the four columns closest to the beam is larger than the distance between the other three columns. This can also be used to determine the orientation in the image. The survey information of the sieve slit is used to calculate the offsets of the central hole from its ideal positions. The $\optx{sieve}$ and $\opty{sieve}$ for each sieve hole is calculated from these offsets and the relative position to the center of the sieve slit. As calculated from the survey result \cite{SurveyA1453,SurveyA1465}, the horizontal offset is 0.0 mm and the vertical offset is -0.2 mm.
+The figure of the sieve slit used to take collimator data is shown in \Cref{C6S2F1}. There are 49 holes in a 7$\times$7 grid pattern with two holes larger than the others. The large holes are used to determine the orientation of the image of the sieve slit. The horizontal distance between the four columns closest to the beam is larger than the distance between the other three columns. This can also be used to determine the orientation in the image. The survey information of the sieve slit was used to calculate the offsets of the central hole from its ideal positions. The $\optx{sieve}$ and $\opty{sieve}$ for each sieve hole is calculated from these offsets and the relative position to the center of the sieve slit. As calculated from the survey result \cite{SurveyA1453,SurveyA1465}, the horizontal offset is 0.0 mm and the vertical offset is -0.2 mm.
 
-The beam position $\optx{beam}$ and $\opty{beam}$ is determined by BPMs. The details of the calibration of the BPMs can be found in reference \cite{Zhu2016}. Because of the target field, the beam is not a straight line in this experiment. The incident angle of the beam at the target can be obtained from the BPM readouts, which can be expressed as the polar angle $\optt{beam}$ and the azimuth angle $\optp{beam}$ in HCS. The scattering angle is the angle between the incident beam and the trajectory of the scattered electron, which can be calculated via two auxiliary vectors:
-\begin{gather} \label{C6S3E1}
-\vec{A} = (\sin(\optt{beam})\cos(\optp{beam}),\ \sin(\optt{beam})\sin(\optp{beam}),\ \cos(\optt{beam})), \\ \label{C6S3E2}
-\vec{B} = (\optp{tg}\cos(\theta_0)+\sin(\theta_0),\ -\optt{tg},\ \cos(\theta_0)-\optp{tg}\sin(\theta_0)), \\ \label{C6S3E3}
+The beam position $\optx{beam}$ and $\opty{beam}$ is determined by BPMs. The details of the calibration of the BPMs can be found in reference \cite{Zhu2016}. Because of the target field, the beam is not a straight line in this experiment. The incident angle of the beam at the target can be obtained from the BPM readouts, which can be expressed as the polar angle $\optt{beam}$ and the azimuthal angle $\optp{beam}$ in the HCS. The scattering angle is the angle between the incident beam and the trajectory of the scattered electron, which can be calculated via two auxiliary vectors:
+\begin{equation} \label{C6S3E1}
+\vec{A} = (\sin(\optt{beam})\cos(\optp{beam}),\ \sin(\optt{beam})\sin(\optp{beam}),\ \cos(\optt{beam})),
+\end{equation}
+\begin{equation} \label{C6S3E2}
+\vec{B} = (\optp{tg}\cos(\theta_0)+\sin(\theta_0),\ -\optt{tg},\ \cos(\theta_0)-\optp{tg}\sin(\theta_0)),
+\end{equation}
+\begin{equation} \label{C6S3E3}
 \cos\optt{scat} = \frac{\vec{A}\cdot\vec{B}}{|\vec{A}||\vec{B}|},
-\end{gather}
-where $\theta_0$ is the spectrometer central angle, and the $\optt{tg}$ and $\optp{tg}$ is the tangent of the angle to keep consistent with the definition in TCS. \cref{C6S2E9} only works for the straight beam, it should be replaced with \cref{C6S3E1,C6S3E2,C6S3E3} when the beam has incident angle.
+\end{equation}
+where $\theta_0$ is the spectrometer central angle, and the $\optt{tg}$ and $\optp{tg}$ are the tangents of the angles to keep consistent with the definition in the TCS. \cref{C6S2E9} only works for the straight beam, it should be replaced with \cref{C6S3E1,C6S3E2,C6S3E3} when the beam has incident angle.
 
-Delta scan is performed at $\pm 3\%$, $\pm 2\%$, $\pm 1\%$ and $0\%$ of the elastic momentum for each configuration except for the one with 3.350 GeV beam energy. The elastic scattered electrons can not pass through the septum magnet even if the septum current is set to its upper limit. Since only one foil of carbon target is used in the experiment, the incident beam position is adjusted manually by a few millimeters to perform a beam position scan to increase the $\opty{tg}$ acceptance coverage. Assume the original beam position is (0,0), beam position is performed at (0,$\ \pm 4$ mm) and ($\pm 4$ mm,0). The actual beam positions should be read from BPM.
+Delta scan was performed at $\pm 3\%$, $\pm 2\%$, $\pm 1\%$ and $0\%$ of the elastic momentum for each configuration except for the one with 3.350 GeV beam energy. In this paticular settings, the elastic scattered electrons can not pass through the septum magnet even if the septum current is set to its upper limit. Since only one foil of carbon target is used in the experiment, the incident beam position was adjusted manually by a few millimeters to perform a beam position scan to increase the $\opty{tg}$ acceptance coverage. Assuming that the original beam position is (0,0), beam position scan is performed at (0,$\ \pm 4$ mm) and ($\pm 4$ mm,0). The actual beam positions was extracted from BPM.
 
 \subsection{Optimization Results}
 \label{C6S3SS2}
 
-The optics matrix are optimized for each beam energy and target field configurations listed in \cref{C6S3T1} except for 3.350 GeV. The procedure discussed in \cref{C6S2SS4} is followed. In this section, the event selection and optimization results is discussed. The data collected with 1.710 GeV beam energy and 2.5 T transverse target field is taken as an example.
+The optics matrix was optimized for each beam energy and target field configurations listed in \cref{C6S3T1} except for 3.350 GeV. The procedure discussed in \cref{C6S2SS4} was followed. In this section, the event selection and optimization results are discussed. The data collected with 1.710 GeV beam energy and 2.5 T transverse target field is taken as an example.
 
 \begin{figure}[b!]
   \centering
@@ -246,7 +250,7 @@ The optics matrix are optimized for each beam energy and target field configurat
   \caption[The foil cut and the focal plane cut.]{The foil cut (left) and the focal plane cut (right). \label{C6S3F1}}
 \end{figure}
 
-The spectrometer central angle need to be determined before the matrix calibration. As mentioned \Cref{C6S2SS2}, the pointing measurement is considered to be more accurate since most of the systematic uncertainty can cancel out when considering the difference of the elastic peak. However, in this experiment, although the carbon and the LHe can be used to perform a pointing measurement, the systematic error can not cancel completely due to that the center of the liquid helium region could not be determined accurately. Thus, the survey method is chosen to determine the spectrometer central angle. The result is summarized in \cref{C6S3T2}. More details about the central angle calibration can be found in Ref. \cite{Huang2014}.
+The spectrometer central angle need to be determined before the matrix calibration. As mentioned in \Cref{C6S2SS2}, the pointing measurement is considered to be more accurate than a survey for the spectrometer central angle determination, since most of the systematic uncertainty can cancel out when considering the difference of the elastic peak. However, in this experiment, although the carbon and the LHe can be used to perform a pointing measurement, the systematic error can not cancel completely due to the fact that the center of the liquid helium region could not be determined accurately. Thus, the survey method was chosen to determine the spectrometer central angle. The result is summarized in \cref{C6S3T2}. More details about the central angle calibration can be found in Ref. \cite{Huang2014}.
 
 \begin{table}[tb!]
   \centering
@@ -260,7 +264,7 @@ The spectrometer central angle need to be determined before the matrix calibrati
   \caption[Spectrometer central angles.]{Spectrometer central angles. \label{C6S3T2}}
 \end{table}
 
-Before the optics study, the initial matrix generated by SNAKE as mentioned in \cref{C6S2SS2} is used to reconstruct the target variables of the optics data. These target variables are used to make cuts. The data need to be selected by applying several different kinds of cut. Although the carbon foil data is relatively clean, it still can be diluted by the electrons scattered by the windows on the target chamber. These events can be removed by applying a foil cut on $\opty{tg}$ or a cut on the focal plane variable $\opty{fp}$ since only one foil is used. The focal plane cut and $\opty{tg}$ cut are shown in \Cref{C6S3F1}. The foil cut is selected for convenience. After the foil cut is made, a set of cuts on target variable $\optt{tg}$ and $\optp{tg}$ is made for each hole in the sieve slit. And for each sieve hole, a cut on relative momentum $\delta$ is made to select the elastic events. Since $\opty{tg}$ acceptance is covered by the beam position scan instead of using multiple foils of target, a beam position cut on $\optx{beam}$ and $\optx{beam}$ is also performed to select data with the proper beam position. The cutting process is repeated for each delta scan and beam position scan configurations. Each cut is assigned with an identification number and saved to separate files.
+Before the optics study, the initial matrix generated by SNAKE as mentioned in \cref{C6S2SS2} was used to reconstruct the target variables of the optics data. These target variables are used to make cuts. The data need to be selected by applying several different kinds of cut. Although the carbon foil data is relatively clean, it can still be diluted by the electrons scattered from the windows on the target chamber. These events can be removed by applying a foil cut on $\opty{tg}$ or a cut on the focal plane variable $\opty{fp}$ since only one foil is used. The focal plane cut and $\opty{tg}$ cut are shown in \Cref{C6S3F1}. The foil cut is selected for convenience. After the foil cut is made, a set of cuts on target variable $\optt{tg}$ and $\optp{tg}$ is made for each hole in the sieve slit. And for each sieve hole, a cut on relative momentum $\delta$ is made to select the elastic events. Since $\opty{tg}$ acceptance is covered by the beam position scan instead of using multiple foils of target, a beam position cut on $\optx{beam}$ and $\opty{beam}$ is also performed to select data with the proper beam position. The cut definition process is repeated for each delta scan and beam position scan configurations. Each cut is assigned with an identification number and saved to separate files.
 
 The optimization package uses the saved cuts to select events. The FCS coordinates, positions and angles of the beam and the identification number of the cut for selected events are recorded into a ASCII file. The script mentioned in \Cref{C6S2SS4} uses the file as input to calculate the reference values for optimization, and append the reference values to the focal plane variables for each event in the file. For example, the reference values of $\optt{tg}$ and $\optp{tg}$ for 1.710 GeV configuration is shown in \Cref{C6S3F2}. The focal plane variables and the reference values are read by the updated optimization program from the file to optimize the optics matrix.
 
@@ -275,10 +279,10 @@ The optimization package uses the saved cuts to select events. The FCS coordinat
   \caption[Reference values for angular optimization.]{The reference values of $\optt{tg}$ and $\optp{tg}$ for optimization (left) and the corresponding actual target plane angle at the reaction point (right). \label{C6S3F2}}
 \end{figure}
 
-\begin{figure}[p!]
+\begin{figure}[b!]
   \centering
   \includegraphics[width=\textwidth]{figs/sieve-pattern.png}
-  \caption[Sieve Pattern for 1.710 GeV data.]{Sieve Pattern for 1.710 GeV data. The patterns of different delta scan are shown in separate plots. The three plots in the top row is delta scans with $-3\%$ (left), $-2\%$ (center) and $-1\%$ (right) of the elastic momentum, the center row is delta scans with $0\%$ (left), $+1\%$ (center) and $+2\%$ (right), the bottom row is delta scan with $+3\%$. The cross points of the grids in the plots are used to indicate the actual positions of the sieve holes. \label{C6S3F3}}
+  \caption[Sieve Pattern for 1.710 GeV data.]{Sieve Pattern for 1.710 GeV data. The patterns of different delta scans are shown in separate plots. The three plots in the top row is delta scans with $-3\%$ (left), $-2\%$ (center) and $0\%$ (right) of the elastic momentum, the bottom row is delta scans with $-2\%$ (left) and $-3\%$ (center). The cross points of the grids in the plots are used to indicate the actual positions of the sieve holes. \label{C6S3F3}}
 \end{figure}
 
 The angular components of the optics matrix are optimized first. The optimized matrix is used to reconstruct the target variables. The sieve pattern is generated by the projection of the reconstructed $\optt{tg}$ and $\optp{tg}$ from the interaction point to the sieve slit plane. The sieve pattern for the 1.710 GeV data is shown in \Cref{C6S3F3}. The nominal position of the sieve holes are indicated by the cross points of the grids in the plots.
@@ -286,10 +290,10 @@ The angular components of the optics matrix are optimized first. The optimized m
 \begin{figure}[tb!]
   \centering
   \includegraphics[width=0.6\textwidth]{figs/delta-pattern.png}
-  \caption[The $\delta_{\mathrm{kin}}$ calibration results for 1.710 GeV data.]{The $\delta_{\mathrm{kin}}$ calibration results for 1.710 GeV data. The peaks in the plot is the reconstructed $\delta_{\mathrm{kin}}$ from different delta scan configurations. Start from the left side, the spectrometer central momentums are $-3\%$, $-2\%$, $-1\%$, $0\%$, $+1\%$, $+2\%$ and $+3\%$ of the elastic momentum respectively. The magenta lines in the plots are used to indicate the actual value of the $\delta_{\mathrm{kin}}$. \label{C6S3F4}}
+  \caption[The $\delta_{\mathrm{kin}}$ calibration results for 1.710 GeV data.]{The $\delta_{\mathrm{kin}}$ calibration results for 1.710 GeV data. The peaks in the plot are the reconstructed $\delta_{\mathrm{kin}}$ from different delta scan configurations. Starting from the left, the spectrometer central momenta are $-3\%$, $-2\%$, $0\%$, $+2\%$ and $+3\%$ of the elastic momentum respectively. The magenta lines in the plots are used to indicate the actual value of the $\delta_{\mathrm{kin}}$. \label{C6S3F4}}
 \end{figure}
 
-Next step is the momentum calibration. As shown in \cref{C6S2SS2}, the momentum of the elastic scattered electron depends on the scattering angle. Since the sieve slit covers a wide angle range, the scattering angles of the electrons passing through different sieve holes are different. The elastic peak will be broaden by this effect, which will influence the resolution of the optimization. Thus, a new variable is defined to remove the angular dependence of $\delta$:
+Next step is the momentum calibration. As shown in \cref{C6S2SS2}, the momentum of an elastically scattered electron depends on the scattering angle. Since the sieve slit covers a wide angle range, the scattering angles of the electrons passing through different sieve holes are different. The elastic peak is broadened due to this effect, which influences the resolution of the optimization. Thus, a new variable is defined to remove the angular dependence of $\delta$:
 \begin{equation} \label{C6S3E4}
 \delta_{\mathrm{kin}} = \delta - \frac{P(M,\ \theta)-P(M,\, \theta_0)}{P_0},
 \end{equation}
@@ -297,7 +301,7 @@ where $\theta_0$ is the spectrometer central angle and $\theta$ is the scatterin
 \begin{equation} \label{C6S3E5}
 \delta = \delta_{\mathrm{kin}} + P_{\mathrm{corr}}(M, \theta).
 \end{equation}
-$P_{\mathrm{corr}}$ only depends on the target material and the scattering angle. In practice, $P_{\mathrm{corr}}$ is calculated with the survey result and the beam positions before the optimization start. During the optimization, the saved $P_{\mathrm{corr}}$ can be used to convert the $\delta$ to $\delta_{\mathrm{kin}}$ with almost no addition cost. Events from different sieve holes can be optimized together if this correction is applied. The $\delta_{\mathrm{kin}}$ calibration results for 1.710 GeV data is shown in \Cref{C6S3F4}. The nominal position of the $\delta_{\mathrm{kin}}$ are indicated by magenta lines for each delta scan configurations.
+$P_{\mathrm{corr}}$ only depends on the target material and the scattering angle. In practice, $P_{\mathrm{corr}}$ is calculated with the survey result and the beam positions before the optimization start. During the optimization, the saved $P_{\mathrm{corr}}$ can be used to convert the $\delta$ to $\delta_{\mathrm{kin}}$ with almost no additional computing cost. Momentum for events from different sieve holes can be optimized together if this correction is applied. The $\delta_{\mathrm{kin}}$ calibration results for 1.710 GeV data is shown in \Cref{C6S3F4}. The nominal positions of the $\delta_{\mathrm{kin}}$ are indicated by magenta lines for each delta scan configuration.
 
 \begin{table}[tb!]
   \centering
@@ -328,7 +332,7 @@ $P_{\mathrm{corr}}$ only depends on the target material and the scattering angle
     R & 1.710 & 2.5 T & \SI{90}{\degree} & 40-00-16 & 2.3$\times10^{-4}$ & 2.7 & 1.7 \\ \hline
     R & 1.157 & 2.5 T & \SI{90}{\degree} & 40-00-16 & 3.4$\times10^{-4}$ & 1.9 & 1.5 \\ \hline
   \end{tabular}
-  \caption[Summary of the optics performance with target field.]{Summary of the optics performance with target field. Here ``L'' and ``R'' stand for the left arm and right arm of the HRS. The unit of beam energy is GeV and the unit of $\theta_{\mathrm{res}}$ and $\phi_{\mathrm{res}}$ is mrad. \label{C6S3T4}}
+  \caption[Summary of optics performance with the target field.]{Summary of optics performance with the target field. Here ``L'' and ``R'' stand for the left arm and right arm of the HRS. The unit of beam energy is GeV and the unit of $\theta_{\mathrm{res}}$ and $\phi_{\mathrm{res}}$ is mrad. \label{C6S3T4}}
 \end{table}
 
 In this section, only the optimization results for 1.710 GeV configuration is shown as an example. However the optimization is performed for all kinematic settings and the optics data without target field is optimized as well with the normal procedure to verify the HRS performance. The resolutions of the optics matrix without the target field is summarized in \cref{C6S3T3} and the resolutions of the optics matrix with target field is summarized in \cref{C6S3T4}. Here the resolution is evaluated via:
@@ -340,17 +344,17 @@ where $W$ are calculated with optics matrix and $W_0$ are the reference values. 
 \section{Reconstruction Procedure}
 \label{C6S4}
 
-Since the final purpose of the optics study is to reconstruct the kinematic variables for each event, the reconstruction procedure is included as part of the optics study. If there is no target field, the Hall A Analyzer is designed to read the optics matrix and calculate the target plane variables directly for each event \cite{Hansen2015} and no addition process is required. However, this is not true if there is target field.
+Since the final purpose of the optics study is to reconstruct the kinematic variables for each event, the reconstruction procedure is included as part of the optics study. If there is no target field, the Hall A Analyzer is designed to read the optics matrix and calculate the target plane variables directly for each event \cite{Hansen2015} and no additional process is required. However, this is notthe case with the target field.
 
 \begin{figure}[b!]
   \centering
   \includegraphics[width=0.9\textwidth]{figs/reconstruction.png}
-  \caption[Reconstruction of the target kinematic variables.]{Reconstruction of the target kinematic variables. \label{C6S4F1}}
+  \caption[Reconstruction of the target kinematic variables.]{Reconstruction of the target kinematic variables. Here $\optt{eff}$ is reconstrcted by the optics matrix from the focal plane variable. The red dot line shows the linear projection to the sieve slit plane and the read solid line indicates the trojectory generated by the simulation package, which gives us the real target variable $\optt{tg}$. The detailed procudure is discussed in this section.  \label{C6S4F1}}
 \end{figure}
 
-Following the logic in \Cref{C6S2SS4}, the reconstruction procedure can also be completed in two steps. The first step is to reconstruct the coordinates of the intersection point of the scattered electron and the sieve slit plane, which can be obtained from the focal plane variables with the optimized optics matrix. The second step is to determine the trajectory of the electron from the sieve slit plane to the target with the simulation package. The detailed procedure to reconstruct kinematic variables involves the following steps:
+Following the logic in \Cref{C6S2SS4}, the reconstruction procedure can also be completed in two steps. The first step is to reconstruct the coordinates of the intersection point of the scattered electron and the sieve slit plane, which can be obtained from the focal plane variables with the optimized optics matrix. The second step is to determine the trajectory of the electron from the sieve slit plane to the target with the simulation package. The detailed procedure to reconstruct kinematic variables involve the following steps:
 \begin{enumerate}[parsep=0pt]
-\item \label{C6S4A1}Select an event, apply the optics matrix to the focal plane coordinates ($\optx{fp}$, $\optt{fp}$, $\opty{fp}$, $\optp{fp}$) to calculate the relative momentum $\delta$ and the effective target angles $\optt{eff}$ and $\optp{eff}$ in TCS. In practice, this step is proceed by the Hall A Analyzer;
+\item \label{C6S4A1}Select an event, apply the optics matrix to the focal plane coordinates ($\optx{fp}$, $\optt{fp}$, $\opty{fp}$, $\optp{fp}$) to calculate the relative momentum $\delta$ and the effective target angles $\optt{eff}$ and $\optp{eff}$ in TCS. In practice, this step is performed by the Hall A Analyzer;
 \item \label{C6S4A2}Calculate the effective beam positions $\optx{eff}$ and $\opty{eff}$ in TCS from the actual beam positions provided by BPMs. Combine with the angles obtained in step \ref{C6S4A1}, the effective target variables are ($\optx{eff}$, $\optt{eff}$, $\opty{eff}$, $\optp{eff}$);
 \item Perform a linear projection of ($\optx{eff}$, $\optt{eff}$, $\opty{eff}$, $\optp{eff}$) to the sieve slit plane, which is the $z=L$ plane in TCS, to obtain ($\optx{proj}$, $\optt{proj}$, $\opty{proj}$, $\optp{proj}$);
 \item Set ($\optx{proj}$, $\opty{proj}$, $\optz{proj}$) as the start point and set the $\delta$ and ($\optt{proj}$, $\optp{proj}$) as the magnitude and direction of the momentum respectively, use the simulation package to generate a trajectory from the start point to the $z=0$ plane in TCS, which gives the target variables of the selected event ($\optx{tg}$, $\optt{tg}$, $\opty{tg}$, $\optp{tg}$).
@@ -362,13 +366,7 @@ Following the logic in \Cref{C6S2SS4}, the reconstruction procedure can also be 
   \caption[Determine the effective beam position correction.]{The relation between $\optx{eff}-\optx{beam}$ and the momentum of the scattered electron. The red curve is the fit result of the function in \cref{C6S4E1}. \label{C6S4F2}}
 \end{figure}
 
-The effective beam positions used in step \ref{C6S4A2} is generated by adding a correction to the actual beam positions. The correction is defined as $\optx{eff}-\optx{beam}$, which is plotted in \Cref{C6S4F2} for 2.5 T transverse target field setting as an example. Since the target in this experiment is short, the correction of the effective beam position is dominated by the deviation of the linear projection from the actual trajectory. The deviation indicates a strong correlation with the momentum $P$ of the scattered electron due to the target field. Thus, the $\optx{eff}-\optx{beam}$ data is fit as a function of $P$:
-\begin{equation} \label{C6S4E1}
-\optx{eff}-\optx{beam} = C_0 + C_1/P.
-\end{equation}
-Similar expressions can be written for $\opty{eff}$ and $\opty{beam}$. The fit is performed for all of the three target field configurations on both spectrometers. The fit parameters is summarized in \cref{C6S4T1}.
-
-\begin{table}[tb!]
+\begin{table}[b!]
   \centering
   \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
   \begin{tabular}{|C{1.2cm}|C{2.3cm}|C{1.8cm}|C{2.2cm}|C{1.8cm}|C{2.2cm}|}
@@ -384,7 +382,13 @@ Similar expressions can be written for $\opty{eff}$ and $\opty{beam}$. The fit i
   \caption[Fit parameters of effective beam position correction.]{Fit parameters of the effective beam position correction. \label{C6S4T1}}
 \end{table}
 
-A Python script is developed to calculate the kinematic variables following the procedure described above. The original reconstruction script based on the Hall A analyzer is included in this script as a preprocessor of the data.
+The effective beam positions used in step \ref{C6S4A2} is generated by adding a correction to the actual beam positions. The correction is defined as $\optx{eff}-\optx{beam}$, which is plotted in \Cref{C6S4F2} for 2.5 T transverse target field setting as an example. Since the target in this experiment is short, the correction of the effective beam position is dominated by the deviation of the linear projection from the actual trajectory. The deviation indicates a strong correlation with the momentum $P$ of the scattered electron due to the target field. Thus, the $\optx{eff}-\optx{beam}$ data is fit as a function of $P$:
+\begin{equation} \label{C6S4E1}
+\optx{eff}-\optx{beam} = C_0 + C_1/P.
+\end{equation}
+Similar expressions can be written for $\opty{eff}$ and $\opty{beam}$. The fit is performed for all three target field configurations on both spectrometers. The fit parameters are summarized in \cref{C6S4T1}.
+
+A Python script was developed to calculate the kinematic variables following the procedure described above. The original reconstruction script based on the Hall A analyzer is included in this script as a preprocessor of the data.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -*-latex-*-
