@@ -3,23 +3,23 @@
 \chapter{Inclusive Electron Scattering}
 \label{C2}
 
-Electron scattering is a well-proven technique to probe the internal structure of the nucleon. The electromagnetic interactions of leptons is well understood and described by Quantum Electrodynamics (QED). Distinguished by whether or not the final hadronic system is detected, the electron scattering experiments can be divided into three types: inclusive scattering, semi-inclusive and exclusive scattering. The process of inclusive electron-nucleon scattering, where only the scattered electron is detected, is discussed in this chapter. The relevant kinematic variables, the differential cross-sections and the formulation of inclusive electron scattering are presented.
+Electron scattering is a well-proven technique to probe the internal structure of the nucleon. The electromagnetic interactions of leptons is well understood and is described by Quantum Electrodynamics (QED). Distinguished by whether or not the final hadronic system is detected, the electron scattering experiments can be divided into three types: inclusive scattering, semi-inclusive and exclusive scattering. The process of inclusive electron-nucleon scattering, where only the scattered electron is detected, is discussed in this chapter. The relevant kinematic variables, the differential cross-sections and the formulation of inclusive electron scattering are presented.
 
 \section{Kinematic Variables}
 \label{C2S1}
 
-The simplest picture of inclusive electron-nucleon scattering is with the one photon exchange approximation, which is shown in \Cref{C2S1F1}. In this scenario, an electron with four momentum $k_\mu=(E,\vec{k})$ interacts with a hadronic target. In the laboratory frame, the four momentum of the target nucleon is defined as $P_\mu=(M,\vec{0})$. For inclusive scattering, the final hadronic system is not detected, while the scattered electron is detected with the four momentum $k'_\mu=(E',\vec{k'})$. The angle between $\vec{k}$ and $\vec{k'}$ is the scattering angle $\theta$. The virtual photon exchanged by the electron and the nucleon carries a four-momentum $q_\mu=(k-k')_\mu=(\nu,\vec{q})$. Since the virtual photon is off its mass shell, $q_\mu$ satisfies $q^2\ne 0$.
+The simplest picture of inclusive electron-nucleon scattering is with the one photon exchange approximation, which is shown in \Cref{C2S1F1}. In this scenario, an electron with four momentum $k_\mu=(E,\vec{k})$ interacts with a hadronic target. In the laboratory frame where the target is at rest, the four momentum of the target nucleon is defined as $P_\mu=(M,\vec{0})$. For inclusive scattering, the final hadronic system is not detected, while the scattered electron is detected with the four momentum $k'_\mu=(E',\vec{k'})$. The angle between $\vec{k}$ and $\vec{k'}$ is the scattering angle $\theta$. The virtual photon exchanged by the electron and the nucleon carries a four-momentum $q_\mu=(k-k')_\mu=(\nu,\vec{q})$. Since the virtual photon is off its mass shell, $q_\mu$ satisfies $q^2\ne 0$.
 
 \begin{figure}[tb!]
   \centering
-  \includegraphics[width=0.6\textwidth]{figs/inclusive-scattering.png}
+  \includegraphics[width=0.6\textwidth]{figs/inclusive-scattering.pdf}
   \caption[Diagram for inclusive electron scattering.]{Diagram for inclusive electron scattering. \label{C2S1F1}}
 \end{figure}
 
 Two independent Lorentz invariants can be constructed from these kinematic variables. The energy transfer $\nu=(P\cdot q)/M$ and the squared four-momentum transfer $q^2=(k-k')^2$ are chosen to describe the inclusive scattering process \cite{Halzen1984}. For a space-like virtual photon, $q^2<0$, the variable $Q^2=-q^2$ is used instead of $q^2$. Since the $E$ and $E'$ are always much larger than the electron mass $m_e$ in the scattering experiments, the electron mass can be neglected. In this case, $\nu$ and $Q^2$ can be expressed as:
 \begin{gather} \label{C2S1E1}
 \nu = E-E', \\ \label{C2S1E2}
-Q^2 = 4EE'\sin\frac{\theta}{2}.
+Q^2 = 4EE'\sin^2\frac{\theta}{2}.
 \end{gather}
 We also refer to the invariant mass of the final hadronic state:
 \begin{equation} \label{C2S1E3}
@@ -33,6 +33,8 @@ and the fraction of the electron energy loss,
 \begin{equation} \label{C2S1E5}
 y = \frac{P\cdot q}{P\cdot k}=\frac{E-E'}{E}.
 \end{equation}
+
+\hspace{1cm} \newline
 
 \section{Cross-Sections and Structure Functions}
 \label{C2S2}
@@ -94,7 +96,7 @@ The two terms in the brackets can be separately studied by considering different
 \begin{equation} \label{C2S2E12}
 \frac{\dd[2]{\sigma}^{\mathrm{unp}}}{\dd{\Omega}\dd{E'}}(k,P;k') = \frac{1}{4}\sum_{s,S}\frac{\dd[2]{\sigma}}{\dd{\Omega}\dd{E'}}(k,s,P,S;k') = \frac{\alpha^2}{Q^4}\frac{E'}{E}2L_{\mu\nu}^{(S)}W^{\mu\nu}_{(S)}.
 \end{equation}
-In the polarized case, the difference of cross-sections with opposite target spins are given by the second term in \cref{C2S2E11}:
+In the polarized case, the difference of cross-sections for scattering a polarized electron with spin $s$ on a polarized target with spin $S$ and that with spin $-S$ are given by the second term in \cref{C2S2E11}:
 \begin{equation} \label{C2S2E13}
 \frac{\dd[2]{\sigma}}{\dd{\Omega}\dd{E'}}(k,s,P,-S;k')-\frac{\dd[2]{\sigma}}{\dd{\Omega}\dd{E'}}(k,s,P,S;k') = \frac{\alpha^2}{Q^4}\frac{E'}{E}4L_{\mu\nu}^{(A)}W^{\mu\nu}_{(A)}.
 \end{equation}
@@ -117,12 +119,12 @@ Using \cref{C2S2E12,C2S2E4,C2S2E18}, the differential cross-section for the inel
 \begin{equation} \label{C2S2E20}
 \frac{\dd[2]{\sigma}}{\dd{\Omega}\dd{E'}} = \sigma_{\mathrm{Mott}}\left[\frac{2}{M}F_1(x,Q^2)\tan^2\frac{\theta}{2}+\frac{1}{\nu}F_2(x,Q^2)\right],
 \end{equation}
-where $\sigma_{\mathrm{Mott}}$ is the cross-section for an electron scattered by a point-like heavy target, which can be expressed as:
+where $\sigma_{\mathrm{Mott}}$ is the cross-section for scattering an electron off a point-like infinitely heavy target, which can be expressed as:
 \begin{equation} \label{C2S2E21}
 \sigma_{\mathrm{Mott}} = \frac{\alpha^2\cos[2](\theta/2)}{4E^2\sin[4](\theta/2)}.
 \end{equation}
 
-For polarized electrons and target, the difference of cross-sections for scattering a polarized electron with spin $s$ on a polarized target with spin $S$ and that with spin $-S$ can be written using \cref{C2S2E13,C2S2E5,C2S2E19}:
+For polarized electrons and target, the difference of cross-sections for scattering a polarized electron on polarized targets with opposite spins can be written using \cref{C2S2E13,C2S2E5,C2S2E19}:
 \begin{equation} \label{C2S2E22}
 \begin{split}
 \frac{\dd[2]{\sigma}^{s,S}}{\dd{\Omega}\dd{E'}}-\frac{\dd[2]{\sigma}^{s,-S}}{\dd{\Omega}\dd{E'}} & = \frac{8m\alpha^2}{q^4}\frac{E'}{E}\frac{1}{M\nu}\Big\{[(q\cdot S)(q\cdot s)+Q^2(s\cdot S)]g_1(x,Q^2) \\
@@ -145,18 +147,20 @@ where $\theta$ is the scattering angle. See \Cref{C2S2F1} for the definitions of
 
 \begin{figure}[tb!]
   \centering
-  \includegraphics[width=0.5\textwidth]{figs/angles-of-polarized-scattering.png}
+  \includegraphics[width=0.5\textwidth]{figs/angles-of-polarized-scattering.pdf}
   \caption[Angular relations of polarized electron scattering.]{Angular relations of polarized electron scattering. \label{C2S2F1}}
 \end{figure}
 
-Therefore, one can derive the cross-section difference for some special values of $\alpha$. For the case that the target nucleons are longitudinally polarized, $\alpha=0$ and $\Theta=\theta$, the cross-section difference for the electron scattering on the nucleon polarized parallel ($\buildrel\rightarrow\over\Rightarrow$) or anti-parallel ($\buildrel\rightarrow\over\Leftarrow$) to the initial electron direction (i.e. the electron spin direction since the electron is longitudinal polarized) can be expressed as:
-\begin{equation} \label{C2S2E25}
-\frac{\dd[2]{\sigma}^{\buildrel\rightarrow\over\Leftarrow}}{\dd{\Omega}\dd{E'}}-\frac{\dd[2]{\sigma}^{\buildrel\rightarrow\over\Rightarrow}}{\dd{\Omega}\dd{E'}}=\frac{4\alpha^2E'}{\nu MQ^2E}\left[(E+E'\cos\theta)g_1(x,Q^2)-2Mxg_2(x,Q^2)\right].
-\end{equation}
+Therefore, one can derive the cross-section difference for some special values of $\alpha$. For the case that the target nucleons are longitudinally polarized, $\alpha=0$ and $\Theta=\theta$ (or $\alpha=\pi$ and $\Theta=\pi-\theta$), the cross-section difference for the electron scattering on the nucleon polarized parallel ($\buildrel\rightarrow\over\Rightarrow$, $\alpha=0$) or anti-parallel ($\buildrel\rightarrow\over\Leftarrow$, $\alpha=\pi$) to the initial electron direction (i.e. the electron spin direction since the electron is longitudinal polarized) can be expressed as:
+\begin{align}
+\frac{\dd[2]{\sigma}^{\buildrel\rightarrow\over\Leftarrow}}{\dd{\Omega}\dd{E'}}-\frac{\dd[2]{\sigma}^{\buildrel\rightarrow\over\Rightarrow}}{\dd{\Omega}\dd{E'}} & = \frac{4\alpha^2E'}{\nu MQ^2E}\left[(E+E'\cos\theta)g_1(x,Q^2)+\frac{2EE'}{\nu}(\cos\theta-1)g_2(x,Q^2)\right] \notag \\ \label{C2S2E25}
+& =\frac{4\alpha^2E'}{\nu MQ^2E}\left[(E+E'\cos\theta)g_1(x,Q^2)-2Mxg_2(x,Q^2)\right].
+\end{align}
 If the target nucleons are transversely polarized and the nucleon spin lies in the scattering plane, $\alpha=\pi/2$ and $\phi=0$ or $\pi$, the cross-section difference can be expressed as:
-\begin{equation} \label{C2S2E26}
-\frac{\dd[2]{\sigma}^{\rightarrow\Uparrow}}{\dd{\Omega}\dd{E'}}-\frac{\dd[2]{\sigma}^{\rightarrow\Downarrow}}{\dd{\Omega}\dd{E'}}=\frac{4\alpha^2E'^2}{\nu MQ^2E}\sin\theta\left[g_1(x,Q^2)+\frac{2E}{\nu}g_2(x,Q^2)\right].
-\end{equation}
+\begin{align}
+\frac{\dd[2]{\sigma}^{\rightarrow\Uparrow}}{\dd{\Omega}\dd{E'}}-\frac{\dd[2]{\sigma}^{\rightarrow\Downarrow}}{\dd{\Omega}\dd{E'}} & = \frac{4\alpha^2E'}{\nu MQ^2E}\left[E'\sin\theta g_1(x,Q^2)+\frac{2EE'}{\nu}\sin\theta g_2(x,Q^2)\right]. \notag \\ \label{C2S2E26}
+& = \frac{4\alpha^2E'^2}{\nu MQ^2E}\sin\theta\left[g_1(x,Q^2)+\frac{2E}{\nu}g_2(x,Q^2)\right].
+\end{align}
 
 \section{Structure Functions in the Parton Model}
 \label{C2S3}
@@ -210,11 +214,14 @@ The scaling behavior of the structure functions is only valid at the Bjorken lim
 
 \begin{figure}[tb!]
   \centering
-  \begin{subfigure}[t]{0.35\textwidth}
-    \includegraphics[width=\textwidth]{figs/gluon-radiation-a.png}
+  \begin{subfigure}[t]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{figs/gluon-radiation-a.pdf}
+    \subcaption{{} \label{C2S3F1A}}
   \end{subfigure}
-  \begin{subfigure}[t]{0.35\textwidth}
-    \includegraphics[width=\textwidth]{figs/gluon-radiation-b.png}
+  \qquad
+  \begin{subfigure}[t]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{figs/gluon-radiation-b.pdf}
+    \subcaption{{} \label{C2S3F1B}}
   \end{subfigure}
   \caption[Gluon radiation in electron-quark scattering.]{Radiating process which cannot be separated from the basic process of electron scattering. \label{C2S3F1}}
 \end{figure}
@@ -243,54 +250,54 @@ The previous sections revealed that the inclusive scattering process can be form
 \label{C2S4SS1}
 
 As shown in \Cref{C2S1F1}, the inclusive scattering process is equivalent to absorption of a virtual photon on a nucleon. In the center of mass (c.m.) frame of the hadronic intermediate state, the four-momentum of the virtual photon is given by ($\omega_\gamma$, $\vec{k}_\gamma$), which can be expressed as \cite{Drechsel2004}:
-\begin{equation} \label{C2S4E1}
+\begin{equation} \label{C2S4SS1E1}
 \omega_\gamma = \frac{M\nu-Q^2}{W}, \qquad \vec{k}_\gamma = \frac{M}{W}\vec{q}.
 \end{equation}
 where $|\vec{q}|=\sqrt{\nu^2+Q^2}$ is the lab photon momentum. Since $\omega_\gamma$ vanishes at $\nu=Q^2/M$ and therefore is inconvenient in the context of the multipole expansion, one can define the ``equivalent photon energy'' or the virtual photon flux $K$ to replace $\omega_\gamma$ according to Hand's definition \cite{Hand1963}:
-\begin{equation} \label{C2S4E2}
+\begin{equation} \label{C2S4SS1E2}
 K = K_H = \nu(1-x) = \frac{W^2-M^2}{2M}.
 \end{equation}
 An alternative convention could be Gilman's definition \cite{Gilman1968}:
-\begin{equation} \label{C2S4E3}
+\begin{equation} \label{C2S4SS1E3}
 K = K_G = |\vec{q}| = \sqrt{\nu^2+Q^2}.
 \end{equation}
-\cref{C2S4E2,C2S4E3} reduce to $\nu$ for the real photon scattering at $Q^2=0$. However, at intermediate $Q^2$, the photon flux is strongly convention dependent.
+\cref{C2S4SS1E2,C2S4SS1E3} reduce to $\nu$ for the real photon scattering at $Q^2=0$. However, at intermediate $Q^2$, the photon flux is strongly convention dependent.
 
 The inclusive electron-nucleon scattering can then be parameterized in terms of a flux factor and four partial cross-sections \cite{Drechsel2001}:
-\begin{equation} \label{C2S4E4}
+\begin{equation} \label{C2S4SS1E4}
 \frac{\dd{\sigma}}{\dd{\Omega}\dd{E'}} = \Gamma_V[\sigma_T+\epsilon\sigma_L-hP_x\sqrt{2\epsilon(1-\epsilon)}\slt-hP_z\sqrt{1-\epsilon^2}\stt],
 \end{equation}
 where $h$ is the helicity of the longitudinally polarized electron and $P_z$ and $P_x$ denote the components of the target polarization parallel and perpendicular to the virtual photon momentum $\vec{q}$ in the scattering plane of the electron respectively. The $\epsilon$ is the photon polarization and $\Gamma_V$ is the virtual photon flux factor:
 \begin{equation*}
 \epsilon = \frac{1}{1+2(1+\nu^2/Q^2)\tan^2\theta/2}, \qquad \Gamma_V = \frac{\alpha}{2\pi^2}\frac{E'}{E}\frac{K}{Q^2}\frac{1}{1-\epsilon}.
 \end{equation*}
-The four partial cross-sections are the transverse ($\sigma_T$) and longitudinal ($\sigma_L$) cross-sections and two interference terms: the longitudinal-transverse cross-sections ($\slt$) and the transverse-transverse cross-sections ($\stt$). $\sigma_T$ and $\sigma_L$ represent the cross-sections for absorption of transverse and longitudinal virtual photons respectively. $\sigma_L$ vanishes in the $Q^2=0$ (real photon) limit since the real photon is transversely polarized. Therefore, the total photon-absorption cross-section is given by $\sigma_T$ in the real photon limit. The two spin-flip cross-sections can only be measured by double-polarization experiments.
+The four partial cross-sections are the transverse ($\sigma_T$) and longitudinal ($\sigma_L$) cross-sections and two interference terms: the longitudinal-transverse cross-sections ($\slt$) and the transverse-transverse cross-sections ($\stt$). $\sigma_T$ and $\sigma_L$ represent the cross-sections for absorption of transverse and longitudinal virtual photons respectively. $\sigma_L$ vanishes in the $Q^2=0$ (real photon) limit since the real photon is transversely polarized. Therefore, the total photon-absorption cross-section is given by $\sigma_T$ in the real photon limit. The two spin-flip cross-sections $\stt$ and $\slt$ can only be measured by double-polarization experiments.
 
-The partial cross-sections $\sigma_T$ and $\stt$ can be expressed in terms of the helicity dependent photo-absorption cross-sections $\sigma_{1/2}$ and $\sigma_{3/2}$. The subscripts refer to the total spin of the photon plus the target nucleon. \Cref{C2S4F1} shows the two different situations. These helicity dependent cross-sections are related to $\sigma_T$ and $\stt$ through:
-\begin{equation} \label{C2S4E5}
+The partial cross-sections $\sigma_T$ and $\stt$ can be expressed in terms of the helicity dependent photo-absorption cross-sections $\sigma_{1/2}$ and $\sigma_{3/2}$. The subscripts refer to the total spin of the photon plus the target nucleon. \Cref{C2S4SS1F1} shows the two different situations. These helicity dependent cross-sections are related to $\sigma_T$ and $\stt$ through:
+\begin{equation} \label{C2S4SS1E5}
 \sigma_T = \frac{1}{2}(\sigma_{1/2}+\sigma_{3/2}), \qquad \stt = \frac{1}{2}(\sigma_{1/2}-\sigma_{3/2}).
 \end{equation}
 
 \begin{figure}[tb!]
   \centering
   \begin{subfigure}[t]{0.4\textwidth}
-    \includegraphics[width=\textwidth]{figs/photon-absorption-a.png}
-    \subcaption{{}\label{C2S4F1A}}
+    \includegraphics[width=\textwidth]{figs/photon-absorption-a.pdf}
+    \subcaption{{} \label{C2S4SS1F1A}}
   \end{subfigure}
   \qquad
   \qquad
   \begin{subfigure}[t]{0.4\textwidth}
-    \includegraphics[width=\textwidth]{figs/photon-absorption-b.png}
-    \subcaption{{}\label{C2S4F1B}}
+    \includegraphics[width=\textwidth]{figs/photon-absorption-b.pdf}
+    \subcaption{{} \label{C2S4SS1F1B}}
   \end{subfigure}
-  \caption[Schematic of the helicity dependent cross-sections $\sigma_{1/2}$ and $\sigma_{3/2}$.]{The helicity dependent cross-sections for a positive helicity virtual photon ($h_\gamma=+$) to be absorbed by a polarized nucleon (here $h_N=\pm$ means $h_N=\pm 1/2$): (a) $\sigma_{1/2}$ and (b) $\sigma_{3/2}$. \label{C2S4F1}}
+  \caption[Schematic of the helicity dependent cross-sections $\sigma_{1/2}$ and $\sigma_{3/2}$.]{The helicity dependent cross-sections for a positive helicity virtual photon ($h_\gamma=+$) to be absorbed by a polarized nucleon (here $h_N=\pm$ means $h_N=\pm 1/2$): (a) $\sigma_{1/2}$ and (b) $\sigma_{3/2}$. \label{C2S4SS1F1}}
 \end{figure}
 
 The relations between the structure functions and the photo-absorption cross-sections can be written as \cite{Thomas2001,Drechsel2003}:
-\begin{align} \label{C2S4E6}
-\sigma_T & = AF_1, \\ \label{C2S4E7}
-\sigma_L & = A\left[\frac{(1+\gamma^2)M}{\gamma^2\nu}F_2-F_1\right], \\ \label{C2S4E8}
-\stt & = A(g_1-\gamma^2g_2), \\ \label{C2S4E9}
+\begin{align} \label{C2S4SS1E6}
+\sigma_T & = AF_1, \\ \label{C2S4SS1E7}
+\sigma_L & = A\left[\frac{(1+\gamma^2)M}{\gamma^2\nu}F_2-F_1\right], \\ \label{C2S4SS1E8}
+\stt & = A(g_1-\gamma^2g_2), \\ \label{C2S4SS1E9}
 \slt & = A\gamma(g_1+g_2),
 \end{align}
 where $\gamma=Q/\nu$ and $A=4\pi^2\alpha/MK$.
@@ -298,50 +305,50 @@ where $\gamma=Q/\nu$ and $A=4\pi^2\alpha/MK$.
 \subsection{Compton Scattering}
 \label{C2S4SS2}
 
-Now consider the elastic real photon scattering process $\gamma(k)+N(P)\rightarrow\gamma(k')+N(P')$. The four-momentum of the incident and scattered real photon is $k=(\nu,\vec{k})$ and $k'=(\nu',\vec{k'})$ respectively with $k^2=k'^2=0$. In the laboratory frame, the four-momentum of the nucleon is $P=(M,0)$. If we denote the scattering angle by $\theta$ in the laboratory frame, the energy and momentum conservation gives \cite{Thomas2001}:
-\begin{equation} \label{C2S4E10}
+Now consider the elastic real photon scattering process $\gamma(k)+N(P)\rightarrow\gamma(k')+N(P')$. The four-momentum of the incident and scattered real photon is $k=(\nu,\vec{k})$ and $k'=(\nu',\vec{k'})$ respectively with $k^2=k'^2=0$. In the laboratory frame, the four-momentum of the nucleon is $P=(M,\vec{0})$. If we denote the scattering angle by $\theta$ in the laboratory frame, the energy and momentum conservation gives \cite{Thomas2001}:
+\begin{equation} \label{C2S4SS2E1}
 \nu' = \frac{\nu}{1+\frac{\nu}{M}(1-\cos\theta)}.
 \end{equation}
 
 The polarization of the incident and scattered photons can be characterized by two linear polarization vectors $\epsilon^\mu$ and $\epsilon'^\nu$. Due to the transverse nature of real photons, we choose:
-\begin{equation} \label{C2S4E11}
+\begin{equation} \label{C2S4SS2E2}
 \begin{split}
 \epsilon^\mu = (0,\vec{\epsilon}), & \quad \vec{k}\cdot\vec{\epsilon} = 0, \\
 \epsilon'^\nu = (0,\vec{\epsilon'}), & \quad \vec{k'}\cdot\vec{\epsilon'} = 0.
 \end{split}
 \end{equation}
 We can choose a coordinate system such that the $z$-axis coincides with the direction of $\vec{k}$. The polarization vector of a linearly polarized photon can be expressed as the linear combination of two unit vectors:
-\begin{equation} \label{C2S4E12}
+\begin{equation} \label{C2S4SS2E3}
 \vec{\epsilon}_x = (1,0,0), \quad \vec{\epsilon}_y = (0,1,0).
 \end{equation}
 The circularly polarized photons are given by:
-\begin{equation} \label{C2S4E13}
+\begin{equation} \label{C2S4SS2E4}
 \vec{\epsilon}_{\lambda=1} = \frac{1}{\sqrt{2}}(\vec{\epsilon}_x+i\vec{\epsilon}_y), \quad \vec{\epsilon}_{\lambda=-1} = \frac{1}{\sqrt{2}}(\vec{\epsilon}_x-i\vec{\epsilon}_y),
 \end{equation}
 with $\vec{\epsilon}^{\;\star}_{\lambda'}\cdot\vec{\epsilon}_{\lambda}=\delta_{\lambda'\lambda}$.
 
 The differential cross-section for real Compton scattering is given by:
-\begin{equation} \label{C2S4E14}
+\begin{equation} \label{C2S4SS2E5}
 \frac{\dd{\sigma}}{\dd{\nu}} = \left(\frac{\nu'}{8\pi M\nu}\right)^2|T_{fi}|^2.
 \end{equation}
-Using the polarization vectors defined in \cref{C2S4E11}, the transition matrix $T_{fi}$ of real Compton scattering can be written as \cite{Thomas2001}:
-\begin{equation} \label{C2S4E15}
+Using the polarization vectors defined in \cref{C2S4SS2E2}, the transition matrix $T_{fi}$ of real Compton scattering can be written as \cite{Thomas2001}:
+\begin{equation} \label{C2S4SS2E6}
 T_{fi} = e^2\epsilon'^{\star\mu}\epsilon^\nu T_{\mu\nu}(k',P';k,P),
 \end{equation}
 with
-\begin{equation} \label{C2S4E16}
+\begin{equation} \label{C2S4SS2E7}
 T_{\mu\nu} = i\int\dd[4]{x}e^{ik'\cdot x}\mel{N(P')}{\mathcal{T}\{J_\mu(x)J_\nu(0)\}}{N(P)},
 \end{equation}
 here $\mathcal{T}$ is the time-ordering operator.
 
 For forward scattering with $\vec{k'}=\vec{k}$, the forward Compton scattering amplitude can be expressed as \cite{Drechsel2003}:
-\begin{equation} \label{C2S4E17}
+\begin{equation} \label{C2S4SS2E8}
 T(\nu,\theta=0) = \vec{\epsilon}\,'^\star\cdot\vec{\epsilon}f(\nu)+i\vec{\sigma}\cdot(\vec{\epsilon}\,'^\star\times\vec{\epsilon}\,)g(\nu),
 \end{equation}
 where $\vec{\sigma}$ are the Pauli spin matrices and $f(\nu)$, $g(\nu)$ represents the spin non-flip and flip amplitudes respectively.
 
-According to the optical theorem, the total photon absorption cross-sections is related to the imaginary part of the forward Compton scattering amplitudes by:
-\begin{equation} \label{C2S4E18}
+According to the optical theorem, the total photon absorption cross-sections are related to the imaginary part of the forward Compton scattering amplitudes by:
+\begin{equation} \label{C2S4SS2E9}
 \begin{split}
 \Im f(\nu) & = \frac{\nu}{8\pi}(\sigma_{1/2}(\nu)+\sigma_{3/2}(\nu)) = \frac{\nu}{4\pi}\sigma_T(\nu), \\
 \Im g(\nu) & = \frac{\nu}{8\pi}(\sigma_{1/2}(\nu)-\sigma_{3/2}(\nu)) = \frac{\nu}{4\pi}\stt(\nu).
@@ -349,41 +356,184 @@ According to the optical theorem, the total photon absorption cross-sections is 
 \end{equation}
 
 The amplitudes $f(\nu)$ and $g(\nu)$ can be expanded in powers of $\nu$ via the low energy theorem (LET) of Low \cite{Low1954} and Gell-Mann and Goldberger \cite{Gellmann1954b}:
-\begin{align} \label{C2S4E19}
-f(\nu) & = -\frac{Z^2e^2}{4\pi M}+(\alpha+\beta)\nu^2+\mathcal{O}(\nu^4), \\ \label{C2S4E20}
+\begin{align} \label{C2S4SS2E10}
+f(\nu) & = -\frac{Z^2e^2}{4\pi M}+(\alpha+\beta)\nu^2+\mathcal{O}(\nu^4), \\ \label{C2S4SS2E11}
 g(\nu) & = -\frac{\kappa^2e^2}{8\pi M^2}\nu+\gamma_0\nu^3+\mathcal{O}(\nu^5),
 \end{align}
 where $Z$ is the charge in the unit of elementary charge, and $\kappa$ is the anomalous magnetic moment in the unit of nuclear magneton. The leading term of the spin non-flip amplitude gives the classical Thomson scattering result. The $\mathcal{O}(\nu^2)$ term contains information of the internal structure and appears as the sum of the electric and magnetic dipole polarizabilities $\alpha$ and $\beta$. The $\mathcal{O}(\nu^3)$ term of the spin flip amplitude is related to the forward spin polarizability $\gamma_0$ with information of the spin structure.
 
 By use of the optical theorem, the Kramers-Kronig dispersion relations can be derived for $f(\nu)$ and $g(\nu)$, which gives:
-\begin{align} \label{C2S4E21}
-\Re f(\nu) & = f(0)+\frac{\nu^2}{2\pi^2}\pv{\int_{\nu_0}^\infty\dd{\nu'}\frac{\sigma_T(\nu')}{\nu'^2-\nu^2}}, \\ \label{C2S4E22}
+\begin{align} \label{C2S4SS2E12}
+\Re f(\nu) & = f(0)+\frac{\nu^2}{2\pi^2}\pv{\int_{\nu_0}^\infty\dd{\nu'}\frac{\sigma_T(\nu')}{\nu'^2-\nu^2}}, \\ \label{C2S4SS2E13}
 \Re g(\nu) & = \frac{\nu}{4\pi^2}\pv{\int_{\nu_0}^\infty\dd{\nu'}\nu'\frac{\sigma_{1/2}(\nu')-\sigma_{3/2}(\nu')}{\nu'^2-\nu^2}},
 \end{align}
 where $\pv$ means the principal value of the integral. $\nu_0$ is introduced to ensure that the integral converges. Thus, the two integrals can be expand as a Taylor series in $\nu$:
-\begin{align} \label{C2S4E23}
-\Re f(\nu) & = f(0)+\sum_{n=1}\left(\frac{1}{2\pi^2}\int_{\nu_0}^\infty\dd{\nu'}\frac{\sigma_T(\nu')}{\nu'^{2n}}\right)\nu^{2n}, \\ \label{C2S4E24}
+\begin{align} \label{C2S4SS2E14}
+\Re f(\nu) & = f(0)+\sum_{n=1}\left(\frac{1}{2\pi^2}\int_{\nu_0}^\infty\dd{\nu'}\frac{\sigma_T(\nu')}{\nu'^{2n}}\right)\nu^{2n}, \\ \label{C2S4SS2E15}
 \Re g(\nu) & = \sum_{n=1}\left(\frac{1}{4\pi^2}\int_{\nu_0}^\infty\dd{\nu'}\frac{\sigma_{1/2}(\nu')-\sigma_{3/2}(\nu')}{\nu'^{2n-1}}\right)\nu^{2n-1}.
 \end{align}
 
-By comparing \cref{C2S4E23,C2S4E24} with \cref{C2S4E19,C2S4E20}, we can obtain Baldin's sum rule \cite{Baldin1960,Lapidus1963} from the $\mathcal{O}(\nu^2)$ term of spin non-flip amplitude $f(\nu)$:
-\begin{equation} \label{C2S4E25}
+By comparing \cref{C2S4SS2E14,C2S4SS2E15} with \cref{C2S4SS2E10,C2S4SS2E11}, we can obtain Baldin's sum rule \cite{Baldin1960,Lapidus1963} from the $\mathcal{O}(\nu^2)$ term of spin non-flip amplitude $f(\nu)$:
+\begin{equation} \label{C2S4SS2E16}
 \alpha+\beta = \frac{1}{2\pi^2}\int_{\nu_0}^\infty\dd{\nu'}\frac{\sigma_T(\nu')}{\nu'^{2}}.
 \end{equation}
 From the leading term of the spin flip amplitude $g(\nu)$, we can obtain the Gerasimov-Drell-Hearn (GDH) sum rule \cite{Gerasimov1966,Drell1966}:
-\begin{equation} \label{C2S4E26}
+\begin{equation} \label{C2S4SS2E17}
 -2\pi^2\alpha\frac{\kappa^2}{M^2} = \int_{\nu_0}^\infty\dd{\nu'}\frac{\sigma_{1/2}(\nu')-\sigma_{3/2}(\nu')}{\nu'}\equiv I,
 \end{equation}
 where $\alpha=e^2/4\pi$ is the fine structure constant. And we can also obtain a relation for the forward spin polarizability \cite{Gellmann1954a,Gellmann1954b}:
-\begin{equation} \label{C2S4E27}
+\begin{equation} \label{C2S4SS2E18}
 \gamma_0 = \frac{1}{4\pi^2}\int_{\nu_0}^\infty\dd{\nu'}\frac{\sigma_{1/2}(\nu')-\sigma_{3/2}(\nu')}{\nu'^3}.
 \end{equation}
 
-The above discussion could be generalized if we treat the real photon as virtual by replacing $k$ with $q$ and assume $q^2\neq 0$. This is known as the double virtual Compton scattering (VVCS). Comparing \cref{C2S4E16} with \cref{C2S2E7}, we notice that the difference between $T_{\mu\nu}$ and the hadronic tensor $W_{\mu\nu}$ is the time ordering operator $\mathcal{T}$ of the electromagnetic currents. Actually $W_{\mu\nu}$ is related to the forward virtual Compton tensor $T_{\mu\nu}$ by \cite{Thomas2001}:
-\begin{equation} \label{C2S4E190}
+The above discussion could be generalized if we treat the real photon as virtual by replacing $k$ with $q$ ($q^2\neq 0$). This is known as the double virtual Compton scattering (VVCS). Comparing \cref{C2S4SS2E7} with \cref{C2S2E7}, we notice that the difference between $T_{\mu\nu}$ and the hadronic tensor $W_{\mu\nu}$ is the time ordering operator $\mathcal{T}$ of the electromagnetic currents. Actually $W_{\mu\nu}$ is related to the forward virtual Compton tensor $T_{\mu\nu}$ by \cite{Thomas2001}:
+\begin{equation} \label{C2S4SS2E19}
 W_{\mu\nu}(q,P) = \frac{1}{2\pi M}\Im T_{\mu\nu}(q,P;q,P).
 \end{equation}
-This relation implies that the components of the hadronic tensor, e.g., the structure functions, are related to the forward double VVCS amplitudes by the Kramers-Kronig dispersion relations. We will continue the discussion of these relations in \Cref{C4}.
+This relation implies that the components of the hadronic tensor, e.g., the structure functions, are related to the forward double VVCS amplitudes by the Kramers-Kronig dispersion relations.
+
+\subsection{Sum Rules and Spin Polarizabilities}
+\label{C2S4SS3}
+
+In the previous section, we discussed the formulation of real Compton scattering as well as the moments and sum rules which could be extracted from the dispersion relations of the forward real Compton scattering amplitude. Most of that discussions could be generalized for double virtual Compton scattering. In this case, the virtual photon has a third polarization component in addition to the $\epsilon_\pm$ defined in \cref{C2S4SS2E4} due to the longitudinal degree of freedom. The longitudinal polarization vector could be defined as:
+\begin{equation} \label{C2S4SS3E1}
+\epsilon_0 = \frac{1}{Q}(|\vec{q}|,0,0,q_0),
+\end{equation}
+where $q$ is the four-momentum of the virtual photon and we have chosen the $z$-axis in the direction of the photon propagation, i.e.,
+\begin{equation} \label{C2S4SS3E2}
+q = (q_0,0,0,|\vec{q}|).
+\end{equation}
+All three polarization vectors and the momentum are orthogonal in the Lorentz metrics.
+
+The forward real Compton scattering amplitude \cref{C2S4SS2E8} could be generalized for the VVCS as \cite{Drechsel2003}:
+\begin{equation} \label{C2S4SS3E3}
+\begin{split}
+T(\nu,Q^2,\theta=0) = & \quad \vec{\epsilon}\,'^\star\cdot\vec{\epsilon}f_T(\nu,Q^2)+f_L(\nu,Q^2) \\
+& +i\vec{\sigma}\cdot(\vec{\epsilon}\,'^\star\times\vec{\epsilon}\,)g_{TT}(\nu,Q^2)+i\vec{\sigma}\cdot[(\vec{\epsilon}\,'^\star-\vec{\epsilon}\,)\times\hat{q}]g_{LT}(\nu,Q^2).
+\end{split}
+\end{equation}
+Notice the $f(\nu)$ and $g(\nu)$ has been generalized to $f_T(\nu,Q^2)$ and $g_{TT}(\nu,Q^2)$.
+
+Similar to what we did in the previous section, we can apply the optical theorem to \cref{C2S4SS3E3} and get the relations between the four amplitudes and the four partial cross-sections of the inclusive scattering in \cref{C2S4SS1E4}, which gives:
+\begin{equation} \label{C2S4SS3E4}
+\begin{aligned}
+& \Im f_T(\nu,Q^2) = \frac{K}{4\pi}\sigma_T(\nu,Q^2), & \qquad & \Im f_L(\nu,Q^2) = \frac{K}{4\pi}\sigma_L(\nu,Q^2), \\
+& \Im g_{TT}(\nu,Q^2) = \frac{K}{4\pi}\stt(\nu,Q^2), & \qquad & \Im g_{LT}(\nu,Q^2) = \frac{K}{4\pi}\slt(\nu,Q^2),
+\end{aligned}
+\end{equation}
+where $K$ is the virtual photon flux defined in \cref{C2S4SS1E2} or \cref{C2S4SS1E3}.
+
+Considering the spin-dependent amplitude $g_{TT}$ and assuming it converges appropriately at high energy, there is an unsubtracted dispersion relation \cite{Drechsel2003}:
+\begin{equation} \label{C2S4SS3E5}
+\Re[g_{TT}(\nu,Q^2)-g_{TT}^{\mathrm{pole}}(\nu,Q^2)] = \frac{\nu}{2\pi^2}\pv{\int_{\nu_0}^\infty\dd{\nu'}\frac{K(\nu',Q^2)\stt(\nu',Q^2)}{\nu'^2-\nu^2}},
+\end{equation}
+where $g_{TT}^{\mathrm{pole}}$ is the elastic contribution. The lower limit of the integration $\nu_0$ is the pion-production threshold. As what we did for real Compton scattering, we could also perform a low energy expansion for the non-pole contribution of $g_{TT}$ similar to \cref{C2S4SS2E11}:
+\begin{equation} \label{C2S4SS3E6}
+\Re[g_{TT}(\nu,Q^2)-g_{TT}^{\mathrm{pole}}(\nu,Q^2)] = \frac{2\alpha}{M^2}I_A(Q^2)\nu+\gamma_0(Q^2)\nu^3+\order{\nu^5}.
+\end{equation}
+
+Comparing \cref{C2S4SS3E6} and the Taylor expansion of \cref{C2S4SS3E5}, the $\order{\nu}$ term yields a generalized GDH sum rule \cite{Drechsel2001}:
+\begin{equation} \label{C2S4SS3E7}
+\begin{split}
+I_A(Q^2) & = \frac{M^2}{4\pi^2\alpha}\int_{\nu_0}^\infty\dd{\nu}\frac{K(\nu,Q^2)}{\nu}\frac{\stt(\nu,Q^2)}{\nu}, \\
+& = \frac{2M^2}{Q^2}\int_0^{x_0}\dd{x}\left\{g_1(x,Q^2)-\frac{4M^2}{Q^2}x^2g_2(x,Q^2)\right\}.
+\end{split}
+\end{equation}
+The $\order{\nu^3}$ term leads to a generalized form of the forward spin polarizability $\gamma_0$:
+\begin{equation} \label{C2S4SS3E8}
+\begin{split}
+\gamma_0(Q^2) & = \frac{1}{2\pi^2}\int_{\nu_0}^\infty\dd{\nu}\frac{K(\nu,Q^2)}{\nu}\frac{\stt(\nu,Q^2)}{\nu^3}, \\
+& = \frac{16\alpha M^2}{Q^6}\int_0^{x_0}\dd{x}x^2\left\{g_1(x,Q^2)-\frac{4M^2}{Q^2}x^2g_2(x,Q^2)\right\}.
+\end{split}
+\end{equation}
+The term proportional to $g_2$ can be dropped when $Q^2$ is large.
+
+For amplitude $g_{LT}$, we have an unsubtracted dispersion relation in the form of \cite{Drechsel2003}:
+\begin{equation} \label{C2S4SS3E9}
+\Re[g_{LT}(\nu,Q^2)-g_{LT}^{\mathrm{pole}}(\nu,Q^2)] = \frac{1}{2\pi^2}\pv{\int_{\nu_0}^\infty\dd{\nu'}\frac{\nu'K(\nu',Q^2)\slt(\nu',Q^2)}{\nu'^2-\nu^2}}.
+\end{equation}
+The low energy expansion of the non-pole contribution of $g_{LT}$ gives:
+\begin{equation} \label{C2S4SS3E10}
+\Re[g_{LT}(\nu,Q^2)-g_{LT}^{\mathrm{pole}}(\nu,Q^2)] = \frac{2\alpha}{M^2}QI_3(Q^2)\nu+Q\dlt(Q^2)\nu^2+\order{\nu^4},
+\end{equation}
+where the leading term is a sum rule for $I_3(Q^2)$:
+\begin{equation} \label{C2S4SS3E11}
+\begin{split}
+I_3(Q^2) & = \frac{M^2}{4\pi^2\alpha}\int_{\nu_0}^\infty\dd{\nu}\frac{K(\nu,Q^2)}{\nu}\frac{\slt(\nu,Q^2)}{Q}, \\
+& = \frac{2M^2}{Q^2}\int_0^{x_0}\dd{x}\left\{g_1(x,Q^2)+g_2(x,Q^2)\right\},
+\end{split}
+\end{equation}
+and the $\order{\nu^2}$ gives the generalized longitudinal-transverse polarizability:
+\begin{equation} \label{C2S4SS3E12}
+\begin{split}
+\dlt(Q^2) & = \frac{1}{2\pi^2}\int_{\nu_0}^\infty\dd{\nu}\frac{K(\nu,Q^2)}{\nu}\frac{\slt(\nu,Q^2)}{Q\nu^2}, \\
+& = \frac{16\alpha M^2}{Q^6}\int_0^{x_0}\dd{x}x^2\left\{g_1(x,Q^2)+g_2(x,Q^2)\right\}.
+\end{split}
+\end{equation}
+
+The forward VVCS amplitude $T(\nu,Q^2,\theta=0)$ can also be written in the form of an one-to-one correspondence with the structure functions \cite{Drechsel2003}:
+\begin{equation} \label{C2S4SS3E13}
+\begin{split}
+T(\nu,Q^2,\theta=0) = \epsilon_\mu'^{\star}\epsilon_\nu & \left\{\left(\frac{q^\mu q^\nu}{q^2}-g^{\mu\nu}\right)T_1(\nu,Q^2)\right. \\
+& +\frac{1}{P\cdot q}(P^\mu-\frac{P\cdot q}{q^2}q^\mu)(P^\nu-\frac{P\cdot q}{q^2}q^\nu)T_2(\nu,Q^2) \\
+& +i\varepsilon^{\mu\nu\alpha\beta}\frac{1}{M}q_\alpha S_\beta S_1(\nu,Q^2) \\
+& \left.+i\varepsilon^{\mu\nu\alpha\beta}\frac{1}{M^3}q_\alpha(P\cdot qS_\beta-S\cdot qP_\beta)S_2(\nu,Q^2)\right\},
+\end{split}
+\end{equation}
+where $P^\mu$ and $S^\mu$ are the four momentum and the spin vector of the nucleon and $T_1$, $T_2$, $S_1$, $S_2$ are four VVCS amplitudes which is covariant under Lorentz transform.
+
+Since we only discussed te spin-flip amplitudes $g_{TT}$ and $g_{LT}$ in this section, we will focus on $S_1$ and $S_2$, which can be expressed as a linear combination of $g_{TT}$ and $g_{LT}$:
+\begin{equation} \label{C2S4SS3E14}
+\begin{split}
+S_1(\nu,Q^2) & = \frac{\nu M}{\nu^2+Q^2}\left(g_{TT}(\nu,Q^2)+\frac{Q}{\nu}g_{LT}(\nu,Q^2)\right), \\
+S_2(\nu,Q^2) & = -\frac{M^2}{\nu^2+Q^2}\left(g_{TT}(\nu,Q^2)-\frac{\nu}{Q}g_{LT}(\nu,Q^2)\right).
+\end{split}
+\end{equation}
+We can construct unsubtracted dispersion relations for $S_1$ and $S_2$ with a similar procedure as $g_{LT}$ and $g_{TT}$.
+
+For amplitude $S_1$, the low energy expansion has the form:
+\begin{multline} \label{C2S4SS3E15}
+\Re[S_1(\nu,Q^2)-S_1^{\mathrm{pole}}(\nu,Q^2)] = \\
+\frac{2\alpha}{M^2}I_1(Q^2)+\left[\frac{2\alpha}{MQ^2}(I_A(Q^2)-I_1(Q^2))+M\dlt(Q^2)\right]\nu^2+\order{\nu^4},
+\end{multline}
+where the leading term leads to a sum rule:
+\begin{equation} \label{C2S4SS3E16}
+\begin{split}
+I_1(Q^2) & \equiv \frac{2M^2}{Q^2}\int_0^{x_0}\dd{x}g_1(x,Q^2) \\
+& = \frac{M^2}{4\pi^2\alpha}\int_{\nu_0}^\infty\dd{\nu}\frac{K(\nu,Q^2)}{\nu^2+Q^2}\left\{\stt(\nu,Q^2)+\frac{Q}{\nu}\slt(\nu,Q^2)\right\},
+\end{split}
+\end{equation}
+which reduces to the GDH sum rule at $Q^2=0$ (real photon limit). $I_1(Q^2)$ has a limit at large $Q^2$:
+\begin{equation} \label{C2S4SS3E17}
+I_1(Q^2)\rightarrow(2M^2/Q^2)\Gamma_1(Q^2), \qquad Q^2\rightarrow\infty,
+\end{equation}
+where
+\begin{equation} \label{C2S4SS3E18}
+\Gamma_1(Q^2) \equiv \int_0^1\dd{x}g_1(x,Q^2).
+\end{equation}
+Here the $\Gamma_1$ is the first moment of structure function $g_1$. The Bjorken sum rule \cite{Bjorken1966,Bjorken1970} gives a prediction of the isovector combination $\Gamma_1^p-\Gamma_1^n$ with the QCD radiative corrections \cite{Larin1991}:
+\begin{multline} \label{C2S4SS3E19}
+\Gamma_1^p-\Gamma_1^n = \frac{1}{6}g_A \\
+\times\left\{1-\left(\frac{\alpha_S(Q^2)}{\pi}\right)-3.5833\left(\frac{\alpha_S(Q^2)}{\pi}\right)^2-20.2153\left(\frac{\alpha_S(Q^2)}{\pi}\right)^3+\cdots\right\},
+\end{multline}
+where $g_A$ is the axial-vector coupling constant. At $Q^2=5$ GeV${}^2$, \cref{C2S4SS3E19} gives $\Gamma_1^p-\Gamma_1^n=0.182\pm0.005$ if only the three light quark flavors are considered. The next-to-leading order fit to global $g_1$ data gives $\Gamma_1^p-\Gamma_1^n=0.176\pm0.003\pm0.007$ \cite{Anthony2000}, in agreement with the theoretical calculation.
+
+The unsubtracted dispersion relations of the amplitude $S_2$ lead to the Burkhardt-Cottingham sum rule. Assume the high energy behavior of this amplitude is given by $S_2\rightarrow\nu^{\alpha_2}$ with $\alpha_2<-1$ when $\nu\rightarrow\infty$, there should be a dispersion relation for $\nu S_2$. By subtracting the dispersion relation of $\nu S_2$ from the dispersion relation of $S_2$ multiplied by $\nu$, we could get a ``super-convergence relation'' \cite{Burkhardt1970}:
+\begin{equation} \label{C2S4SS3E20}
+\int_0^1\dd{x}g_2(x,Q^2) = 0.
+\end{equation}
+This indicates that the elastic and the inelastic contributions to the first moment of $g_2$ should cancel for any value of $Q^2$. The elastic and inelastic contributions to the integral can be separated, thus the BC sum rule can be expressed as:
+\begin{equation} \label{C2S4SS3E21}
+I_2(Q^2) \equiv \frac{2M^2}{Q^2}\int_0^{x_0}\dd{x}g_2(x,Q^2) = \frac{1}{4}F_P(Q^2)(F_D(Q^2)+F_P(Q^2)),
+\end{equation}
+where $F_P$ is the Pauli form factor and $F_D$ is the Dirac form factor. The integral $I_2$ can also be written in terms of the photon-absorption cross-sections and the Sachs form factor $G_E$ and $G_M$:
+\begin{equation} \label{C2S4SS3E22}
+\begin{split}
+I_2(Q^2) & = \frac{M^2}{4\pi^2\alpha}\int_{\nu_0}^\infty\frac{K(\nu,Q^2)}{\nu^2+Q^2}\left\{-\stt(\nu,Q^2)+\frac{\nu}{Q}\slt(\nu,Q^2)\right\} \\
+& = \frac{1}{4}\frac{G_M(Q^2)(G_M(Q^2)-G_E(Q^2))}{1+\tau},
+\end{split}
+\end{equation}
+with $\tau=Q^2/4M^2$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % -*-latex-*-

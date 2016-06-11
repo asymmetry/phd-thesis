@@ -3,7 +3,7 @@
 \chapter{Theoretical Methods}
 \label{C3}
 
-The internal structure of the nucleon can be parameterized by unpolarized and polarized structure functions as described in \Cref{C2}. In this chapter, some of the most common theoretical methods to calculate the $Q^2$ evolution of the structure functions will be discussed. We will give special emphasis to the chiral perturbation theory which is expected to be applicable in the low $Q^2$, the region covered in experiment E08-027.
+The internal structure of the nucleon can be parameterized by unpolarized and polarized structure functions as described in \Cref{C2}. In this chapter, some of the most common theoretical methods to calculate the $Q^2$ evolution of the structure functions will be discussed. We will give special emphasis to the chiral perturbation theory which is expected to be applicable in the low $Q^2$, the region covered in E08-027.
 
 \section{Chiral Perturbation Theory}
 \label{C3S1}
@@ -11,20 +11,20 @@ The internal structure of the nucleon can be parameterized by unpolarized and po
 \subsection{Chiral Symmetry}
 \label{C3S1SS1}
 
-QCD is a type of quantum field theory called a non-abelian gauge theory of colored quarks and gluons. The complete QCD Lagrangian is \cite{Marciano1978}:
-\begin{equation} \label{C3S1E1}
+QCD is a type of quantum field theory called non-abelian gauge theory of colored quarks and gluons. The complete QCD Lagrangian is \cite{Marciano1978}:
+\begin{equation} \label{C3S1SS1E1}
 \mathcal{L}_{\mathrm{QCD}} = \sum_f\bar{q}_f(i\slashed{D}-m_f)q_f-\frac{1}{4}\mathcal{G}_{\mu\nu}^\alpha\mathcal{G}_\alpha^{\mu\nu},
 \end{equation}
 where $\mathcal{G}$ is the field strength tensor and $q$ is the quark spinor. The summation is taken over all six quark flavors.
 
-One particular important concept in QCD is asymptotic freedom, which refers to the fact that the coupling strength decreases for increasing momentum transfer $Q^2$. Asymptotic freedom allows a perturbative approach at high energies for QCD by expanding in powers of the strong interaction coupling constant $\alpha_s(Q^2)$. However, for low energy interactions ($Q^2 <$ 1 GeV${}^2$), the coupling constant $\alpha_s(Q^2)$ is of order one, which makes the expansion approach no longer useful.
+One particular important concept in QCD is asymptotic freedom, which refers to the fact that the coupling strength decreases for increasing momentum transfer $Q^2$. Asymptotic freedom allows a perturbative approach at high energies for QCD by expanding in powers of the strong interaction coupling constant $\alpha_s(Q^2)$. However, for low energy interactions ($Q^2 <$ 1 GeV${}^2$), the coupling constant $\alpha_s(Q^2)$ is of order one, which makes the expansion approach no longer valid.
 
 The masses of the three light quarks $u$, $d$ and $s$ are small compared to typical masses of light hadrons, like the $\rho$ meson (770 MeV) or the proton (938 MeV). For a massless fermion, the chirality or handedness is identical to the particle's helicity $h = \vec{\sigma}\cdot\vec{p}/|\vec{p}|$, where $\vec{\sigma}$ are the Pauli spin matrices and $\vec{p}$ is the particle's momentum. In the limit where the light quark masses vanish, the left-handed and right-handed quark fields are decoupled from each other in the QCD Lagrangian. We could introduce the left and right handed quark fields:
-\begin{equation}\label{C3S1E2}
+\begin{equation}\label{C3S1SS1E2}
 q_{L,R} = \frac{1}{2}(1\mp\gamma_5)q.
 \end{equation}
 and rewrite the QCD Lagrangian as \cite{Scherer2003}:
-\begin{equation} \label{C3S1E3}
+\begin{equation} \label{C3S1SS1E3}
 \mathcal{L}_{\mathrm{QCD}}^0 = \sum_{f=u,d,s}(\bar{q}_{R,f}i\slashed{D}q_{R,f}+\bar{q}_{L,f}i\slashed{D}q_{L,f})-\frac{1}{4}\mathcal{G}_{\mu\nu}^\alpha\mathcal{G}_\alpha^{\mu\nu}.
 \end{equation}
 The Lagrangian $\mathcal{L}_{\mathrm{QCD}}^0$ exhibits a global $\mathrm{U}(3)_L\times\mathrm{U}(3)_R$ symmetry, which is referred as chiral symmetry.
@@ -42,12 +42,12 @@ At low-energy limit, it is impractical to directly deal with quarks and gluons s
 
 The basic idea of an effective field theory is to treat the active, light particles as collective degrees of freedom, while the heavy particles as frozen and static sources \cite{Thomas2001}. An effective Lagrangian $\mathcal{L}_{\mathrm{eff}}$ is constructed to describe the dynamics which incorporates all symmetries of the underlying fundamental theory.
 
-Thus, the QCD Lagrangian \cref{C3S1E1} is split into a symmetric part, $\mathcal{L}_{\mathrm{QCD}}^0$, and a symmetry breaking part $\mathcal{L}'_{\mathrm{QCD}}$ to construct this effective Lagrangian:
-\begin{equation} \label{C3S1E4}
+Thus, the QCD Lagrangian \cref{C3S1SS1E1} is split into a symmetric part, $\mathcal{L}_{\mathrm{QCD}}^0$, and a symmetry breaking part $\mathcal{L}'_{\mathrm{QCD}}$ to construct this effective Lagrangian:
+\begin{equation} \label{C3S1SS2E1}
 \mathcal{L}^{\mathrm{eff}}_{\mathrm{QCD}} = \mathcal{L}_{\mathrm{QCD}}^0+\mathcal{L}'_{\mathrm{QCD}},
 \end{equation}
 where
-\begin{equation} \label{C3S1E5}
+\begin{equation} \label{C3S1SS2E2}
 \mathcal{L}'_{\mathrm{QCD}} = -\sum_f\bar{q}_fm_fq_f
 \end{equation}
 is considered as a perturbation to the $\mathcal{L}_{\mathrm{QCD}}^0$.
@@ -57,7 +57,7 @@ The effective Lagrangian should be able to represent the same low-energy expansi
 \subsection{Chiral Perturbative Theory for Baryons}
 \label{C3S1SS3}
 
-Chiral Perturbation Theory provides a systematic method to discuss the interaction of Goldstone bosons with each other and with the external fields, which has been discussed in many theoretical works such as \cite{Gasser1984,Gasser1985}. The baryons have also been included into the scheme as well \cite{Bernard1992}. Consider the transition matrix elements with only a single baryon in the initial and final states, we can describe many static properties such as masses or magnetic moments, form factors as well as some more complicated processes, such as pion-nucleon scattering, Compton scattering, pion photo-production etc with the help of the $\chi$PT. However, the presence of the baryons creates a complication. The low-energy expansion corresponds to an expansion in pion loops. The baryon mass does not vanish in the chiral limit and is comparable to the chiral scale $\Lambda_\chi\simeq 1$GeV, and thus only baryon three-momenta can be considered small \cite{Bernard1993}. This implies that there is no guarantee that the small-momentum expansion is exact one-to-one corresponding to the one-loop graphs. Theorists have considered two main approaches to deal with this complication: Heavy Baryon $\chi$PT (HB$\chi$PT) \cite{Jenkins1991a,Jenkins1991b} and Relativistic Baryon $\chi$PT (RB$\chi$PT) \cite{Ellis2003}.
+Chiral Perturbation Theory provides a systematic method to discuss the interaction of Goldstone bosons with each other and with the external fields, which has been discussed in many theoretical works such as \cite{Gasser1984,Gasser1985}. The baryons have also been included into the scheme as well \cite{Bernard1992}. Consider the transition matrix elements with only a single baryon in the initial and final states, we can describe many static properties such as masses or magnetic moments, form factors as well as some more complicated processes, such as pion-nucleon scattering, Compton scattering, pion photo-production etc with the help of the $\chi$PT. However, the presence of the baryons creates a complication. The low-energy expansion corresponds to an expansion in pion loops. The baryon mass does not vanish in the chiral limit and is comparable to the chiral scale $\Lambda_\chi\simeq 1$GeV, and thus only baryon three-momenta can be considered small \cite{Bernard1993}. This implies that there is no guarantee that the small-momentum expansion is an exact one-to-one corresponding to the one-loop graphs. Theorists have considered two main approaches to deal with this complication: Heavy Baryon $\chi$PT (HB$\chi$PT) \cite{Jenkins1991a,Jenkins1991b} and Relativistic Baryon $\chi$PT (RB$\chi$PT) \cite{Ellis2003}.
 
 \begin{description}
 \item[Heavey Baryon $\chi$PT :] \hfill \\
@@ -68,20 +68,20 @@ The heavy baryon $\chi$PT suffers from a deficiency that the standard low energy
 
 Both HB$\chi$PT and RB$\chi$PT have been used to study the spin-dependent structure functions and their moments \cite{Ji2000,Bernard2002,Kao2003,Bernard2003}. The theoretical effects in these works are limited to the two flavor case of the $u$ and $d$ quarks. Typically the $Q^2$-dependence of the Compton amplitudes is studied in the chiral limit, which can be connected to the spin structure functions via Kramers-Kronig dispersion relations as mentioned in \cref{C2S4}.
 
-One more thing need to be mentioned is the contribution from the resonances. The resonances are expected to have significant contributions to the Compton amplitudes, especially from the $\Delta(1232)$ resonance. Ideally one would like to include the contribution from the $\Delta$ as a dynamical degree of freedom in the effective Lagrangian, however, an effective field theory formulation for the relativistic pion-nucleon-delta system does not exist. Thus, the contribution from $\Delta$ can only be done systematically in the heavy baryon scheme treating the nucleon-delta mass splitting as an additional small parameter \cite{Hemmert1998}. The $\Delta$ contribution is estimated by calculating relativistic Born graphs, which are dependent on a few experimental parameters that are not well-known. Another important resonance contribution which is less pronounced is due to the vector mesons \cite{Bernard2003}. Ref. \cite{Kubis2001} discusses the procedure to include the degrees of freedom of the vector mesons.
+One more thing needs to be mentioned is the contribution from the resonances. The resonances are expected to have significant contributions to the Compton amplitudes, especially from the $\Delta(1232)$ resonance. Ideally one would like to include the contribution from the $\Delta$ as a dynamical degree of freedom in the effective Lagrangian. However, an effective field theory formulation for the relativistic pion-nucleon-delta system does not exist. Thus, the contribution from $\Delta$ can only be done systematically in the heavy baryon scheme treating the nucleon-delta mass splitting as an additional small parameter \cite{Hemmert1998}. The $\Delta$ contribution is estimated by calculating relativistic Born graphs, which are dependent on a few experimental parameters that are not well-known. Another important resonance contribution which is less pronounced is due to the vector mesons \cite{Bernard2003}. Ref. \cite{Kubis2001} discusses the procedure to include the degrees of freedom of the vector mesons.
 
 \section{Operator Product Expansion}
 \label{C3S2}
 
-The Operator Product Expansion (OPE) was originally introduced by Wilson in 1969 as an attempt to provide direct QCD predictions for the moments of the structure functions via sum rules \cite{Wilson1969}. The method is model-independent and the main results depend only on some very general results from Quantum Field Theory.
+The Operator Product Expansion (OPE) was originally introduced by Wilson in 1969 as an attempt to provide direct QCD predictions for the moments of the structure functions via sum rules \cite{Wilson1969}. The method is model-independent and the main results depend only on some general results from Quantum Field Theory.
 
-As mentioned in \Cref{C2S4SS2}, the hadronic tensor $W_{\mu\nu}$ of the inclusive electron-nucleon scattering is related to the forward virtual Compton tensor $T_{\mu\nu}$. At Bjorken limit, where the $Q^2$ and $p\cdot q$ are both large - typically greater than 2 GeV${}^2$, the Fourier transform in \cref{C2S4E16} is dominated by the behavior as $x^2\rightarrow 0$. The OPE is the ideal tool to deal such problems \cite{Thomas2001}.
+As mentioned in \Cref{C2S4SS2}, the hadronic tensor $W_{\mu\nu}$ of the inclusive electron-nucleon scattering is related to the forward virtual Compton tensor $T_{\mu\nu}$. At the Bjorken limit, where the $Q^2$ and $p\cdot q$ are both large - typically greater than 2 GeV${}^2$, the Fourier transform in \cref{C2S4SS2E7} is dominated by the behavior $x^2\rightarrow 0$. The OPE is the ideal tool to deal with such problems \cite{Thomas2001}.
 
-The OPE allows the evaluation of products of operators by separating the perturbative part of the product from the non-perturbative part. For example, the product of the two operators $\mathcal{O}_a(x)\mathcal{O}_b(0)$ can be expressed as a sum over local operators in the limit of $x\rightarrow 0$ \cite{Manohar1992}:
+The OPE allows the evaluation of products of operators by separating the perturbative part of the product from the non-perturbative part. For example, the product of the two operators $\mathcal{O}_a(x)\mathcal{O}_b(0)$ can be expressed as a sum over local operators in the limit $x\rightarrow 0$ \cite{Manohar1992}:
 \begin{equation} \label{C3S2E1}
 \mathcal{O}_a(x)\mathcal{O}_b(0) = \sum_iC_{ab,i}(x)\mathcal{O}_i(0),
 \end{equation}
-where $C_{ab}$ are the Wilson coefficient functions. Because of the asymptotic freedom feature of QCD, the coupling constant is small at short distance. Thus the Wilson coefficient functions can be calculated perturbatively in the limit of $x\rightarrow 0$.
+where $C_{ab}$ are the Wilson coefficient functions. Because of the asymptotic freedom feature of QCD, the coupling constant is small at short distances. Thus the Wilson coefficient functions can be calculated perturbatively in the limit $x\rightarrow 0$.
 
 In practice, the momentum space version of the operator product is more commonly used:
 \begin{equation} \label{C3S2E2}
@@ -115,31 +115,31 @@ where $\tau\equiv d-n$ is defined as the ``twist''. At large $Q^2$, the most imp
 
 When we discussed the structure functions in the parton model in \cref{C2S3}, we claimed that the $g_2$ structure function does not have a simple interpretation in the naive parton model. The most reliable method to explore the $g_2$ structure function is OPE. Light quark mass effects are suppressed by $m/Q$ in $F_1$ or $g_1$ but they are important in $g_2$ where they enter as $\order{m/\Lambda_{\mathrm{QCD}}}$ \cite{Jaffe1991}.
 
-In analogy to the hadron tensor, the forward virtual Compton scattering amplitude $T_{\mu\nu}$ in \cref{C2S4E16} can be decomposed to \cite{Jaffe1990}:
-\begin{align} \label{C3S2E8}
-& T_{\mu\nu}(q;P,S) = T_{\mu\nu}^{(S)}(q;P) + iT_{\mu\nu}^{(A)}(q;P,S), \\ \label{C3S2E9}
-& T_{\mu\nu}^{(S)}(q;P) = -g_{\mu\nu}T_1(\nu,Q^2)+\frac{P_\mu P_\nu}{M^2}T_2(\nu,Q^2)+q^\mu\;\mathrm{or}\; q^\nu\;\mathrm{terms}, \\ \label{C3S2E10}
+In analogy to the hadron tensor, the forward virtual Compton scattering amplitude $T_{\mu\nu}$ in \cref{C2S4SS2E7} can be decomposed to \cite{Jaffe1990}:
+\begin{align} \label{C3S2SS1E1}
+& T_{\mu\nu}(q;P,S) = T_{\mu\nu}^{(S)}(q;P) + iT_{\mu\nu}^{(A)}(q;P,S), \\ \label{C3S2SS1E2}
+& T_{\mu\nu}^{(S)}(q;P) = -g_{\mu\nu}T_1(\nu,Q^2)+\frac{P_\mu P_\nu}{M^2}T_2(\nu,Q^2)+q^\mu\;\mathrm{or}\; q^\nu\;\mathrm{terms}, \\ \label{C3S2SS1E3}
 & T_{\mu\nu}^{(A)}(q;P,S) = \frac{\varepsilon_{\mu\nu\alpha\beta}q^\alpha S^\beta}{M^2}A_1(\nu,Q^2)+\frac{\varepsilon_{\mu\nu\alpha\beta}q^\alpha(\nu S^\beta-q\cdot SP^\beta)}{M^4}A_2(\nu,Q^2).
 \end{align}
 
-From \cref{C2S4E19}, the relation between $T_{\mu\nu}$ and the hadronic tensor is $W_{\mu\nu}=T_{\mu\nu}/2\pi M$. Thus, by comparing the imaginary part of $T_{\mu\nu}$ and the hadronic tensor, we can get:
-\begin{equation} \label{C3S2E11}
+From \cref{C2S4SS2E19}, the relation between $T_{\mu\nu}$ and the hadronic tensor is $W_{\mu\nu}=T_{\mu\nu}/2\pi M$. Thus, by comparing the imaginary part of $T_{\mu\nu}$ and the hadronic tensor, we can get:
+\begin{equation} \label{C3S2SS1E4}
 g_1(x,Q^2) = \frac{\nu}{2\pi M^2}\Im A_1(\nu,Q^2), \quad g_2(x,Q^2) = \frac{\nu^2}{2\pi M^4}\Im A_2(\nu,Q^2).
 \end{equation}
 We could define
-\begin{equation} \label{C3S2E12}
+\begin{equation} \label{C3S2SS1E5}
 \alpha_1(x,Q^2) = \frac{\nu}{M^2}A_1(\nu,Q^2), \quad \alpha_2(x,Q^2) = \frac{\nu^2}{M^4}A_2(\nu,Q^2).
 \end{equation}
 for convenience.
 The Kramers-Kronig dispersion relations of $\alpha_1(x,Q^2)$ and $\alpha_1(x,Q^2)$ can be written as \cite{Jaffe1990}:
-\begin{equation} \label{C3S2E13}
+\begin{equation} \label{C3S2SS1E6}
 \begin{split}
 \alpha_1(\omega,Q^2) & = \frac{2\omega}{\pi}\int_1^\infty\frac{\dd{\omega'}}{\omega'^2-\omega^2}\Im\alpha_1(\omega',Q^2), \\
 \alpha_2(\omega,Q^2) & = \frac{2\omega^3}{\pi}\int_1^\infty\frac{\dd{\omega'}}{\omega'^2(\omega'^2-\omega^2)}\Im\alpha_2(\omega',Q^2),
 \end{split}
 \end{equation}
-where $\omega=1/x$. Replacing $\alpha_{1,2}$ in \cref{C3S2E13} with $g_{1,2}$ and expanding the right side in Taylor series gives the dispersion relations between $\alpha_{1,2}$ and $g_{1,2}$:
-\begin{equation} \label{C3S2E14}
+where $\omega=1/x$. Replacing $\alpha_{1,2}$ in \cref{C3S2SS1E6} with $g_{1,2}$ and expanding the right side in Taylor series gives the dispersion relations between $\alpha_{1,2}$ and $g_{1,2}$:
+\begin{equation} \label{C3S2SS1E7}
 \begin{split}
 \alpha_1(x,Q^2) & = \frac{4}{x}\sum_{n=0,2,4,\dots}\left(\frac{1}{x^{n}}\right)\int_0^1\dd{y}y^ng_1(y,Q^2), \\
 \alpha_2(x,Q^2) & = \frac{4}{x^3}\sum_{n=0,2,4,\dots}\left(\frac{1}{x^{n}}\right)\int_0^1\dd{y}y^{n+2}g_2(y,Q^2).
@@ -147,46 +147,46 @@ where $\omega=1/x$. Replacing $\alpha_{1,2}$ in \cref{C3S2E13} with $g_{1,2}$ an
 \end{equation}
 
 $T_{\mu\nu}$ could also be calculated via Operator Product Expansion. The calculation result gives us the expressions for the $\alpha_1(x,Q^2)$ and $\alpha_1(x,Q^2)$ as a series of $1/x$ \cite{Jaffe1990}:
-\begin{align} \label{C3S2E15}
-\alpha_1(x,Q^2)+\alpha_2(x,Q^2) & = \sum_{n=0,2,4,\dots}\frac{a_n+nd_n}{n+1}\frac{1}{x^{n+1}}, \\ \label{C3S2E16}
+\begin{align} \label{C3S2SS1E8}
+\alpha_1(x,Q^2)+\alpha_2(x,Q^2) & = \sum_{n=0,2,4,\dots}\frac{a_n+nd_n}{n+1}\frac{1}{x^{n+1}}, \\ \label{C3S2SS1E9}
 \alpha_2(x,Q^2) & = \sum_{n=2,4,\dots}\frac{n(d_n-a_n)}{n+1}\frac{1}{x^{n+1}},
 \end{align}
-where $a_n$ are the twist-2 and $d_n$ are the twist-3 matrix elements of the quark and gluon operators. By comparing \cref{C3S2E15,C3S2E16} with \cref{C3S2E14}, we can get an infinite set of moment sum rules for the structure function $g_1$ and $g_2$:
-\begin{align} \label{C3S2E17}
-\int_0^1\dd{x}x^ng_1(x,Q^2) & = \frac{1}{4}a_n, \quad n = 0,2,4,\dots, \\ \label{C3S2E18}
+where $a_n$ are the twist-2 and $d_n$ are the twist-3 matrix elements of the quark and gluon operators. By comparing \cref{C3S2SS1E8,C3S2SS1E9} with \cref{C3S2SS1E7}, we can get an infinite set of moment sum rules for the structure function $g_1$ and $g_2$:
+\begin{align} \label{C3S2SS1E10}
+\int_0^1\dd{x}x^ng_1(x,Q^2) & = \frac{1}{4}a_n, \quad n = 0,2,4,\dots, \\ \label{C3S2SS1E11}
 \int_0^1\dd{x}x^ng_2(x,Q^2) & = \frac{1}{4}\frac{n}{n+1}(d_n-a_n), \quad n = 2,4,\dots.
 \end{align}
 The symmetry of the system under charge conjugation selects only even moments out in the above relations.
 
-\cref{C3S2E17} connects $g_1$ with the twist-2 matrix element $a_n$. If we replace the $a_n$ with the corresponding moments of $g_1$, the leading twist terms cancel, and we get:
-\begin{equation} \label{C3S2E19}
+\cref{C3S2SS1E10} connects $g_1$ with the twist-2 matrix element $a_n$. If we replace the $a_n$ with the corresponding moments of $g_1$, the leading twist terms cancel, and we get:
+\begin{equation} \label{C3S2SS1E12}
 \int_0^1\dd{x}x^{n-1}\left(g_1(x,Q^2)+\frac{n}{n-1}g_2(x,Q^2)\right) = \frac{1}{4}d_{n-1}, \quad n \geq 3.
 \end{equation}
 If we only consider the leading twist effect and set the twist-3 $d_n$ terms to be 0, we can get:
-\begin{equation} \label{C3S2E20}
+\begin{equation} \label{C3S2SS1E13}
 \int_0^1\dd{x}x^{n-1}[g_1(x,Q^2)+g_2(x,Q^2)] = \int_0^1\dd{x}x^{n-1}\frac{1}{n}g_1(x,Q^2).
 \end{equation}
-Notice that the left hand side and the right hand side are both in the form of Mellin Transform. Using the convolution property of integral transforms and the fact that $1/n$ is the Mellin transform of unity \cite{Barone2003}, \cref{C3S2E20} can be inverted as:
-\begin{equation} \label{C3S2E21}
+Notice that the left hand side and the right hand side are both in the form of Mellin Transform. Using the convolution property of integral transforms and the fact that $1/n$ is the Mellin transform of unity \cite{Barone2003}, \cref{C3S2SS1E13} can be inverted as:
+\begin{equation} \label{C3S2SS1E14}
 g_1(x,Q^2)+g_2(x,Q^2) = \int_x^1\frac{\dd{y}}{y}g_1(y,Q^2).
 \end{equation}
 This relation is referred as the Wandzura-Wilczek relation \cite{Wandzura1977}:
-\begin{equation} \label{C3S2E22}
+\begin{equation} \label{C3S2SS1E15}
 \gtww(x,Q^2) = -g_1(x,Q^2)+\int_x^1\frac{\dd{y}}{y}g_1(y,Q^2),
 \end{equation}
 which shows that the leading twist part of $g_2$ is determined completely by $g_1$ and can be interpreted by the parton model.
 
 With the Wandzura-Wilczek relation, the $g_2$ structure function can be separated into leading and higher-twist components, which can be expressed as:
-\begin{equation} \label{C3S2E23}
+\begin{equation} \label{C3S2SS1E16}
 g_2(x,Q^2) = \gtww(x,Q^2)+\bar{g}_2(x,Q^2),
 \end{equation}
 where
-\begin{equation} \label{C3S2E24}
+\begin{equation} \label{C3S2SS1E17}
 \int_0^1\dd{x}x^n\bar{g}_2(x,Q^2) = \frac{n}{4(n+1)}d_n, \quad n = 2,4,\dots.
 \end{equation}
 
 The higher-twist part $\bar{g}_2$ can also be separated as \cite{Slifer2004}:
-\begin{equation} \label{C3S2E25}
+\begin{equation} \label{C3S2SS1E18}
 g_2(x,Q^2) = -\int_x^1\pdv{y}\left[\frac{m_q}{M}h_T(y,Q^2)+\zeta(y,Q^2)\right]\frac{\dd{y}}{y}.
 \end{equation}
 There are three contributions to the structure function $g_2$ \cite{G2P}:
